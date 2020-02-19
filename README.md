@@ -1,6 +1,6 @@
 # [Developer Student Club - MSIT](http://dsc.msit.in/)
 
-![alt text](https://github.com/dscmsit/dscmsit.github.io/blob/master/Screenshot%202020-02-19%20at%202.44.52%20PM.png"DSC-MSIT")
+![alt text](https://i.ibb.co/7r0vdgg/Screenshot-2020-02-19-at-2-44-52-PM.png"DSC-MSIT")
 
 ## Quick start
 
