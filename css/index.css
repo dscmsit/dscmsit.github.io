@@ -2,12 +2,46 @@
     font-family: 'Barlow',sans-serif;
     font-weight: 100;
 }
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+    border-radius: 10px !important;
 
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+      cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out;
+  }
+.card-body{
+    text-align: center;
+}
+
+.card-title{
+    line-height: 10px;
+    font-size: 20px;
+}
+.clip{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 .barlow-extralight{
     font-family: 'Barlow', sans-serif;
     font-weight: 200;
 }
-
+.webinar{
+    display: flex !important; 
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    padding:5vh;
+    z-index: -999999999;
+}
 .barlow-medium{
     font-family: 'Barlow',sans-serif;
     font-weight: 500;
@@ -69,7 +103,9 @@ h2{
     margin: 0px;
     padding-bottom: 15px;
 }
-
+.container{
+    z-index: -99999999999;
+}
 p{
     font-size: 20px;
     padding: 0px;
