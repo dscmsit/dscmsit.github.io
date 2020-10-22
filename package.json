@@ -1,0 +1,29 @@
+{
+  "name": "dscmsit.github.io",
+  "version": "1.1.0",
+  "description": "DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aims to help students build their development skills.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md|html)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dscmsit/dscmsit.github.io.git"
+  },
+  "keywords": [
+    "DSC",
+    "Developer-Students-Club",
+    "Maharaja-Surajmal-Institute-of-Technology",
+    "MSIT"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dscmsit/dscmsit.github.io/issues"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "homepage": "https://github.com/dscmsit/dscmsit.github.io#readme"
+}
