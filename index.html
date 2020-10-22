@@ -41,11 +41,37 @@
     <meta name="theme-color" content="#141414" />
     <meta
       name="Description"
-      content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aims to help students build their development skills."
+      content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills."
     />
 
     <!-- Adding PWA Capabilities -->
     <link rel="manifest" href="manifest.json" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DSC MSIT",
+        "logo": "https://dsc.msit.in/images/DSC-Light-Logo.png",
+        "url": "https://dsc.msit.in/",
+        "description": "DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills",
+        "email": "dscmsit@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Maharaja Surajmal Institute of Technology",
+          "addressLocality": "C-4, Janakpuri",
+          "addressRegion": "New Delhi",
+          "addressCountry": "India",
+          "postalCode": "110058"
+        },
+        "foundingDate": "2019",
+        "sameAs": [
+          "https://www.linkedin.com/company/dsc-msit/"
+          "https://www.instagram.com/dscmsit",
+          "https://www.facebook.com/dscmsit"
+        ]
+      }
+    </script>
 
     <script>
       if ("serviceWorker" in navigator) {
@@ -372,7 +398,6 @@
             alt="DSC MSIT Instagram"
           />
         </a>
-
         <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
           <img
             src="images/Github.svg"
@@ -380,7 +405,6 @@
             alt="DSC MSIT GitHub"
           />
         </a>
-
         <a
           href="https://www.facebook.com/dscmsit/"
           target="_blank"
@@ -390,6 +414,17 @@
             src="images/Facebook.svg"
             class="circle-icon"
             alt="DSC MSIT Facebook"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/dsc-msit/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="images/Linkedin.svg"
+            class="circle-icon"
+            alt="DSC MSIT Linkedin"
           />
         </a>
       </div>
