@@ -1,0 +1,28 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 18px;
+  color: #707070;
+  text-align: center; 
+}
+
+.container {
+  margin-top: 8%; }
+
+h1 {
+  color: #ebc135;
+  font-size: 100px; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  margin-top: 50px !important; }
+
+p {
+  font-size: 18px; }
+
+footer {
+  font-size: 14px; }
