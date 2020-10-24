@@ -312,6 +312,7 @@ var checkDark = function() {
   var dark = localStorage.getItem("dark");
 
   if (dark === "true") {
+    $('.webinar').css('background-color','#202020')
     $("body").addClass("dark");
     // $('body').addClass('dark');
     $(".logo-light").hide();
@@ -322,6 +323,7 @@ var checkDark = function() {
       .children()
       .text("I want light mode");
   } else {
+    $('.webinar').css('background-color','white ')
     $("body").removeClass("dark");
     $(".logo-light").show();
     $(".logo").hide();
