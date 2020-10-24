@@ -2,7 +2,8 @@
   font-family: "Barlow", sans-serif;
   font-weight: 100;
 }
-.webinar{
+
+.webinar {
   display: flex;
   margin-top: 3vh;
   flex-direction: row;
@@ -12,35 +13,42 @@
   z-index: 10;
   background-color: white;
 }
-.clip{
+
+.clip {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .card {
   margin-bottom: 5vh;
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
-  border-radius: 10px !important;;
+  border-radius: 10px !important;
 }
-.card-title{
+
+.card-title {
   line-height: 1px;
   font-size: 20px !important;
 }
-.card-text{
-  padding: 20px;
-  line-height: 20px;
-  font-size: 15px !important;
+
+.card-text {
+  padding: 15px;
+  line-height: 25px;
+  font-size: 16px !important;
 }
-.card-body{
+
+.card-body {
   text-align: center;
 }
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
 }
+
 .barlow-extralight {
   font-family: "Barlow", sans-serif;
   font-weight: 200;
