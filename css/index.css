@@ -330,7 +330,7 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  display: inline-block;
+  /* display: inline-block; */
   display: none;
 }
 
@@ -366,7 +366,7 @@ body {
 .main-menu-image {
   height: 35vw;
   width: auto;
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
   max-height: 200px;
   position: absolute;
@@ -411,7 +411,7 @@ body {
 .main-image {
   height: 35vw;
   width: auto;
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
   padding-right: 10vw;
   max-height: 500px;
@@ -611,6 +611,13 @@ input:focus {
 
   p {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .menu-item {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -902,5 +909,6 @@ input:focus {
 }
 
 #sun {
-  color: yellow;
+  color: #ffd02a;
+  /* #ffd74b */
 }
