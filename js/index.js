@@ -330,6 +330,8 @@ var checkDark = function() {
     $(".logo").show();
     $(".logo-nav-light").hide();
     $(".logo-nav").show();
+    $("#sun").show();
+    $("#moon").hide();
     $(".dark-light-toggle")
       .children()
       .text("I want light mode");
@@ -340,6 +342,8 @@ var checkDark = function() {
     $(".logo").hide();
     $(".logo-nav-light").show();
     $(".logo-nav").hide();
+    $("#sun").hide();
+    $("#moon").show();
     $(".dark-light-toggle")
       .children()
       .text("I want dark mode");
