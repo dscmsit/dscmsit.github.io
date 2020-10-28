@@ -4,6 +4,22 @@
 
 ![alt text](https://i.ibb.co/7r0vdgg/Screenshot-2020-02-19-at-2-44-52-PM.png"DSC-MSIT")
 
+## Contributions and PR
+
+- All the PRs should be generated against `development` branch
+- Remember to run `npm run format` before creating pull request so that the code is formatted.
+- Netlify will create a preview inside pull request, please check if your work is fine.
+- If the PR is related to any front end change, please attach relevant screenshots in the pull request description.
+
+
+## Netlify Deployment
+
+- You can find the netlify deployment at https://dscmsit.netlify.app/ based on the `development branch`
+- It might include those changes as well, which are in currently in development and are worked upon
+- These changes might not be published yet to the official website.
+- So it's recommended to go through the netlify deployed website first before raising an issue or making any pull request.
+
+
 ## Quick start
 
 Quick start options:
@@ -12,12 +28,6 @@ Quick start options:
 - Clone the repo: `https://github.com/dscmsit/dscmsit.github.io.git`.
 - `npm install` to install all the devDependencies
 
-## Contributions and PR
-
-- All the PRs should be generated against `development` branch
-- Remember to run `npm run format` before creating pull request.
-- Netlify will create a preview inside pull request, please check if your work is fine.
-- If the PR is related to any front end change, please attach relevant screenshots in the pull request description.
 
 ## What's included
 
