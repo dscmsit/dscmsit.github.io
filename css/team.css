@@ -13,8 +13,8 @@
 }
 
 .dark .container-main {
-  background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
-    url("../images/after-landing-dark.svg") center center fixed;
+  background: url("../images/after-landing-dark.svg") center center fixed
+    no-repeat;
   background-size: cover;
 }
 
