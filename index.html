@@ -133,7 +133,21 @@
         </div>
       </div>
     </div>
+    <div class="phone-toggler">
+      <i
+            class="fas fa-moon fa-lg LightLogo"
+            id="moon"
+            onclick="toggleDark();checkDark();"
+          ></i>
+          <i
+            class="fas fa-sun fa-lg DarkLogo"
+            id="sun"
+            onclick="toggleDark();checkDark();"
+          ></i>
+    </div>
+
     <div class="main-menu">
+
       <div class="main-menu-close" id="menu-close">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +195,7 @@
         alt="Open Menu"
       />
     </div>
-
+    
     <div class="navbar">
       <div class="navbar-dsc-logo">
         <img
@@ -197,7 +211,20 @@
           alt="DSC MSIT"
         />
       </div>
+      
       <div class="menu barlow-extralight">
+        <!-- <div class="toggler">
+          <i
+            class="fas fa-moon fa-lg LightLogo"
+            id="moon"
+            onclick="toggleDark();checkDark();"
+          ></i>
+          <i
+            class="fas fa-sun fa-lg DarkLogo"
+            id="sun"
+            onclick="toggleDark();checkDark();"
+          ></i>
+        </div> -->
         <div class="menu-item" id="home-desk">
           Home
         </div>
@@ -213,18 +240,7 @@
         <div class="menu-item" id="contact-desk">
           Contact Us
         </div>
-        <div class="menu-item">
-          <i
-            class="fas fa-moon fa-lg"
-            id="moon"
-            onclick="toggleDark();checkDark();"
-          ></i>
-          <i
-            class="fas fa-sun fa-lg"
-            id="sun"
-            onclick="toggleDark();checkDark();"
-          ></i>
-        </div>
+        
       </div>
 
       <div class="menu-phone" id="menu-open">
@@ -300,7 +316,7 @@
       </div>
 
       <div class="main-down-arrow" id="down-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393" >
           <g
             id="Group_2"
             data-name="Group 2"
