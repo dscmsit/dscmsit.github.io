@@ -4,7 +4,7 @@
     <!-- TODO: Update with new gtag Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Title of the webpage -->
-    <title>Developer Student Club MSIT</title>
+    <title>Developer Student Clubs MSIT</title>
 
     <!-- Favicon linking -->
     <link
@@ -30,6 +30,12 @@
     <link
       href="https://fonts.googleapis.com/css?family=Barlow:100,200,500"
       rel="stylesheet"
+    />
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
     />
 
     <!-- Links to css files -->
@@ -182,13 +188,13 @@
           data-aos="fade-up"
           src="images/DSC-Dark-Logo.png"
           class="logo-nav"
-          alt="DSC VIT"
+          alt="DSC MSIT"
         />
         <img
           data-aos="fade-up"
           src="images/DSC-Light-Logo.png"
           class="logo-nav-light"
-          alt="DSC VIT"
+          alt="DSC MSIT"
         />
       </div>
       <div class="menu barlow-extralight">
@@ -206,6 +212,18 @@
         </div>
         <div class="menu-item" id="contact-desk">
           Contact Us
+        </div>
+        <div class="menu-item">
+          <i
+            class="fas fa-moon fa-lg"
+            id="moon"
+            onclick="toggleDark();checkDark();"
+          ></i>
+          <i
+            class="fas fa-sun fa-lg"
+            id="sun"
+            onclick="toggleDark();checkDark();"
+          ></i>
         </div>
       </div>
 
@@ -376,6 +394,56 @@
         </a>
       </div>
     </div>
+    <!-- <div class="container container-main " id="updates-scroll">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Webinars and Events
+    </h1>
+    <div class="webinar" data-aos="fade-up">
+      <div class="card " style="width: 18.75rem;" data-aos="fade-up">
+        <iframe class="clip" src="https://www.youtube.com/embed/iR5WIknxdkY" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title barlow-medium">Card title</h5>
+          <p class="card-text barlow-extralight extra-break">
+            Some quick example text to build on the card title and make up
+            the bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18.75rem;" data-aos="fade-up">
+        <iframe class="clip" src="https://www.youtube.com/embed/iR5WIknxdkY" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title barlow-medium">Card title</h5>
+          <p class="card-text barlow-extralight extra-break">
+            Some quick example text to build on the card title and make up
+            the bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18.75rem;" data-aos="fade-up">
+        <iframe class="clip" src="https://www.youtube.com/embed/iR5WIknxdkY" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title barlow-medium">Card title</h5>
+          <p class="card-text barlow-extralight extra-break">
+            Some quick example text to build on the card title and make up
+            the bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="./videos.html">
+      <div data-aos="fade-up" class="button-maker">
+        <div class="barlow-thin button-text">
+          View More
+        </div>
+      </div>
+    </a>
+  </div> -->
 
     <div class="container-main holded-container" id="contact-scroll">
       <h1 data-aos="fade-up" class="barlow-medium text-center">
@@ -398,11 +466,15 @@
             alt="DSC MSIT Instagram"
           />
         </a>
-        <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
+        <a
+          href="https://www.linkedin.com/company/dsc-msit/"
+          target="_blank"
+          rel="noopener"
+        >
           <img
-            src="images/Github.svg"
+            src="images/Linkedin.svg"
             class="circle-icon"
-            alt="DSC MSIT GitHub"
+            alt="DSC MSIT Linkedin"
           />
         </a>
         <a
@@ -417,14 +489,32 @@
           />
         </a>
         <a
-          href="https://www.linkedin.com/company/dsc-msit/"
+          href="https://www.youtube.com/channel/UCuCF8OKyllfpjxd_ylCsNog"
           target="_blank"
           rel="noopener"
         >
           <img
-            src="images/Linkedin.svg"
+            src="images/Youtube.svg"
             class="circle-icon"
-            alt="DSC MSIT Linkedin"
+            alt="DSC MSIT Youtube"
+          />
+        </a>
+        <a
+          href="https://www.medium.com/dsc-msit/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="images/Medium.svg"
+            class="circle-icon"
+            alt="DSC MSIT Medium"
+          />
+        </a>
+        <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
+          <img
+            src="images/Github.svg"
+            class="circle-icon"
+            alt="DSC MSIT GitHub"
           />
         </a>
       </div>

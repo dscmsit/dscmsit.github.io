@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of the webpage -->
+    <title>Videos | Developer Student Clubs MSIT</title>
+
+    <!-- Favicon linking -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicons/site.webmanifest" />
+
+    <!--Links to css CDN's-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:100,200,500"
+      rel="stylesheet"
+    />
+
+    <!-- Links to css files -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/svg.css" />
+    <link rel="stylesheet" href="css/youtube.css" />
+
+    <!--Meta tags for SEO and Responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="DSC MSIT (Developer Student Club) is a Google Developers program for university students, with an aim to help students build their development skills."
+    />
+
+    <style>
+      .container {
+        width: 100vw;
+        padding-left: 100px;
+        padding-right: 100px;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 1139px) {
+        .container {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="./index.html">
+        <div class="navbar-dsc-logo">
+          <img
+            data-aos="fade-up"
+            src="images/DSC-Dark-Logo.png"
+            class="logo-nav"
+            alt="DSC MSIT"
+          />
+          <img
+            data-aos="fade-up"
+            src="images/DSC-Light-Logo.png"
+            class="logo-nav-light"
+            alt="DSC MSIT"
+          />
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="link"> Our YouTube</a>
+    </div>
+    <div
+      class="container container-main holded-container container-main-last"
+      id="our-work-scroll"
+    >
+      <div class="sections">
+        <h3 class="playlists active barlow-medium">Playlists</h3>
+        <h3 class="videos barlow-medium">Videos</h3>
+      </div>
+
+      <div class="loader"></div>
+
+      <section id="videos">
+        <div class="embed"></div>
+        <div class="button-maker">
+          <div class="barlow-thin button-text show-more-btn">
+            Show More
+          </div>
+        </div>
+      </section>
+
+      <section id="playlists">
+        <div class="embed-playlists"></div>
+      </section>
+
+      <section id="playlist-videos">
+        <h3 class="barlow-medium playlist-vid-heading">All Playlist Videos</h3>
+        <div
+          class="button-maker playlist-vid-heading"
+          style="margin: 25px auto;"
+        >
+          <div class="button-text back-to-playlist">
+            Back to Playlists
+          </div>
+        </div>
+
+        <div class="embed-playlist-videos"></div>
+      </section>
+    </div>
+    <div class="footer container-main  container-main-last">
+      <div
+        class="dark-light-toggle barlow-medium text-center"
+        id="dark-light-toggle"
+      >
+        <p>I want dark mode</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shave/2.5.9/shave.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jq.js"></script>
+    <script src="./js/youtube.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
