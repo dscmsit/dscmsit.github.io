@@ -108,13 +108,9 @@ h1 {
   top: -10px;
 }
 
-.logo-nav-light {
-  margin-top: -10px;
-  width: 300px;
-}
-
+.logo-nav-light,
 .logo-nav {
-  margin-top: -10px;
+  margin-top: -5px;
   width: 300px;
 }
 
@@ -443,16 +439,16 @@ body {
     no-repeat;
   background-size: cover;
 }
-.phone-toggler{
+
+.phone-toggler {
+  right: 90px;
   position: fixed;
   top: 3vh;
-  display: flex;
-  left: 40%;
   z-index: 99999999;
-  animation: 7s infinite infinite_rotation;
+  /* animation: 7s infinite infinite_rotation; */
 }
-.toggler{
-  
+
+.toggler {
   top: 2vh;
   right: 100%;
   z-index: 9999999;
@@ -461,6 +457,7 @@ body {
   cursor: pointer;
   opacity: 0;
 }
+
 .dark-light-toggle {
   cursor: pointer;
   text-decoration: underline;
@@ -655,6 +652,10 @@ input:focus {
   p {
     font-size: 18px;
   }
+
+  .phone-toggler {
+    right: 80px;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -715,6 +716,19 @@ input:focus {
     width: 70%;
     margin: auto auto;
   }
+
+  .logo-nav-light {
+    width: 270px;
+  }
+
+  .logo-nav {
+    width: 300px;
+  }
+
+  .phone-toggler {
+    top: 3.5vh;
+    left: 80% !important;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -757,9 +771,7 @@ input:focus {
     transform: translateY(0%);
     width: 80%;
   }
-.LightLogo{
-  
-}
+
   .main-image {
     top: 50vh;
     transform: translateY(0%);
@@ -778,13 +790,12 @@ input:focus {
   }
 
   .logo-nav-light {
-    margin-top: 0px;
-    width: 260px;
+    width: 250px;
   }
 
   .logo-nav {
     margin-top: -5px;
-    width: 260px;
+    width: 300px;
   }
 
   .logo {
@@ -797,6 +808,11 @@ input:focus {
     margin-left: -5px;
     width: 400px;
     margin-bottom: 10px;
+  }
+
+  .phone-toggler {
+    top: 3.5vh;
+    left: 75% !important;
   }
 }
 
@@ -869,27 +885,23 @@ input:focus {
   .logo-light {
     width: 340px;
   }
-}
 
-@media (max-width: 375px) {
-  .logo {
-    width: 300px;
-  }
-
-  .logo-light {
-    width: 300px;
+  .phone-toggler {
+    left: 70% !important;
   }
 }
 
 @media (max-width: 375px) {
   .logo-nav-light {
-    width: 240px;
+    width: 210px;
     margin-left: -10px;
+    margin-top: 0px;
   }
 
   .logo-nav {
-    width: 240px;
+    width: 250px;
     margin-left: -10px;
+    margin-top: 0px;
   }
 
   .logo {
@@ -908,30 +920,14 @@ input:focus {
     height: 230px;
   }
 }
-@media (max-width : 700px){
-  .logo-nav,.logo-nav-light{
-    height: 40px;
-    width: 200px;
-  }
-  .phone-toggler{
-    left: 70% !important;
-  }
-}
-@keyframes infinite_rotation{
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
+
 @media (max-width: 320px) {
   .logo-nav-light {
-    width: 220px;
+    width: 190px;
   }
 
   .logo-nav {
-    width: 220px;
+    width: 230px;
   }
 
   .logo {
@@ -946,4 +942,14 @@ input:focus {
 #sun {
   color: #ffd02a;
   /* #ffd74b */
+}
+
+@keyframes infinite_rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
