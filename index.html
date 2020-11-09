@@ -32,6 +32,12 @@
       rel="stylesheet"
     />
 
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+
     <!-- Links to css files -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/svg.css" />
@@ -127,6 +133,19 @@
         </div>
       </div>
     </div>
+    <div class="phone-toggler">
+      <i
+        class="fas fa-moon fa-lg LightLogo"
+        id="moon"
+        onclick="toggleDark();checkDark();"
+      ></i>
+      <i
+        class="fas fa-sun fa-lg DarkLogo"
+        id="sun"
+        onclick="toggleDark();checkDark();"
+      ></i>
+    </div>
+
     <div class="main-menu">
       <div class="main-menu-close" id="menu-close">
         <svg
@@ -160,6 +179,7 @@
         </svg>
       </div>
 
+      <!-- For small viewport hamburger -->
       <div class="main-menu-item-holder">
         <h2 class="barlow-extralight text-center" id="home">Home</h2>
         <h2 class="barlow-extralight text-center" id="our-work">Our Focus</h2>
@@ -180,17 +200,18 @@
       <div class="navbar-dsc-logo">
         <img
           data-aos="fade-up"
-          src="images/DSC-Dark-Logo.png"
+          src="images/DSC-MSIT-Dark-Logo.png"
           class="logo-nav"
-          alt="DSC VIT"
+          alt="DSC MSIT"
         />
         <img
           data-aos="fade-up"
-          src="images/DSC-Light-Logo.png"
+          src="images/DSC-MSIT-Light-Logo.png"
           class="logo-nav-light"
-          alt="DSC VIT"
+          alt="DSC MSIT"
         />
       </div>
+
       <div class="menu barlow-extralight">
         <div class="menu-item" id="home-desk">
           Home
@@ -207,6 +228,10 @@
         <div class="menu-item" id="contact-desk">
           Contact Us
         </div>
+        <!-- <div class="menu-item">
+        <i class="fas fa-moon fa-lg LightLogo" id="moon" onclick="toggleDark();checkDark();"></i>
+        <i class="fas fa-sun fa-lg DarkLogo" id="sun" onclick="toggleDark();checkDark();"></i>
+      </div> -->
       </div>
 
       <div class="menu-phone" id="menu-open">

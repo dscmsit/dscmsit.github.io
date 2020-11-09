@@ -108,13 +108,9 @@ h1 {
   top: -10px;
 }
 
-.logo-nav-light {
-  margin-top: -10px;
-  width: 300px;
-}
-
+.logo-nav-light,
 .logo-nav {
-  margin-top: -10px;
+  margin-top: -5px;
   width: 300px;
 }
 
@@ -330,7 +326,7 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  display: inline-block;
+  /* display: inline-block; */
   display: none;
 }
 
@@ -366,7 +362,7 @@ body {
 .main-menu-image {
   height: 35vw;
   width: auto;
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
   max-height: 200px;
   position: absolute;
@@ -411,7 +407,7 @@ body {
 .main-image {
   height: 35vw;
   width: auto;
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
   padding-right: 10vw;
   max-height: 500px;
@@ -442,6 +438,24 @@ body {
   background: url("../images/after-landing-dark.svg") center center fixed
     no-repeat;
   background-size: cover;
+}
+
+.phone-toggler {
+  right: 90px;
+  position: fixed;
+  top: 3vh;
+  z-index: 99999999;
+  /* animation: 7s infinite infinite_rotation; */
+}
+
+.toggler {
+  top: 2vh;
+  right: 100%;
+  z-index: 9999999;
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .dark-light-toggle {
@@ -614,6 +628,13 @@ input:focus {
   }
 }
 
+@media (max-width: 1240px) {
+  .menu-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .button-text {
@@ -630,6 +651,10 @@ input:focus {
 
   p {
     font-size: 18px;
+  }
+
+  .phone-toggler {
+    right: 80px;
   }
 }
 
@@ -690,6 +715,19 @@ input:focus {
   .holded-container p {
     width: 70%;
     margin: auto auto;
+  }
+
+  .logo-nav-light {
+    width: 270px;
+  }
+
+  .logo-nav {
+    width: 300px;
+  }
+
+  .phone-toggler {
+    top: 3.5vh;
+    left: 80% !important;
   }
 }
 
@@ -752,13 +790,12 @@ input:focus {
   }
 
   .logo-nav-light {
-    margin-top: 0px;
-    width: 260px;
+    width: 250px;
   }
 
   .logo-nav {
     margin-top: -5px;
-    width: 260px;
+    width: 300px;
   }
 
   .logo {
@@ -771,6 +808,11 @@ input:focus {
     margin-left: -5px;
     width: 400px;
     margin-bottom: 10px;
+  }
+
+  .phone-toggler {
+    top: 3.5vh;
+    left: 75% !important;
   }
 }
 
@@ -843,27 +885,23 @@ input:focus {
   .logo-light {
     width: 340px;
   }
-}
 
-@media (max-width: 375px) {
-  .logo {
-    width: 300px;
-  }
-
-  .logo-light {
-    width: 300px;
+  .phone-toggler {
+    left: 70% !important;
   }
 }
 
 @media (max-width: 375px) {
   .logo-nav-light {
-    width: 240px;
+    width: 210px;
     margin-left: -10px;
+    margin-top: 0px;
   }
 
   .logo-nav {
-    width: 240px;
+    width: 250px;
     margin-left: -10px;
+    margin-top: 0px;
   }
 
   .logo {
@@ -885,11 +923,11 @@ input:focus {
 
 @media (max-width: 320px) {
   .logo-nav-light {
-    width: 220px;
+    width: 190px;
   }
 
   .logo-nav {
-    width: 220px;
+    width: 230px;
   }
 
   .logo {
@@ -898,5 +936,20 @@ input:focus {
 
   .logo-light {
     width: 265px;
+  }
+}
+
+#sun {
+  color: #ffd02a;
+  /* #ffd74b */
+}
+
+@keyframes infinite_rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
