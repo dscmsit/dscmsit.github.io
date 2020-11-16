@@ -5,7 +5,9 @@
 
 .webinar {
   display: flex;
+  margin: auto;
   margin-top: 3vh;
+  width: 25%;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
@@ -17,10 +19,16 @@
 .clip {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 185px;
+  width: 340px;
 }
 
 .card {
   margin-bottom: 5vh;
+  padding-bottom: 20px;
+  z-index: -1;
+  width: 340px;
+  height: 353px;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
@@ -29,6 +37,7 @@
 
 .card-title {
   line-height: 1px;
+  margin-bottom: 10px;
   font-size: 20px !important;
 }
 
@@ -435,8 +444,7 @@ body {
 }
 
 .dark .container-main {
-  background: url("../images/after-landing-dark.svg") center center fixed
-    no-repeat;
+  background: url("../images/after-landing-dark.svg") center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -445,6 +453,7 @@ body {
   position: fixed;
   top: 3vh;
   z-index: 99999999;
+  cursor: pointer;
   /* animation: 7s infinite infinite_rotation; */
 }
 
@@ -726,7 +735,7 @@ input:focus {
   }
 
   .phone-toggler {
-    top: 3.5vh;
+    top: 24px;
     left: 80% !important;
   }
 }
@@ -811,7 +820,7 @@ input:focus {
   }
 
   .phone-toggler {
-    top: 3.5vh;
+    top: 24px;
     left: 75% !important;
   }
 }
@@ -919,6 +928,11 @@ input:focus {
     padding-left: 10vw;
     height: 230px;
   }
+
+  .clip {
+    height: 181px;
+    width: 300px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -936,6 +950,15 @@ input:focus {
 
   .logo-light {
     width: 265px;
+  }
+
+  .clip {
+    height: 181px;
+    width: 280px;
+  }
+
+  .card {
+    padding-bottom: 35px;
   }
 }
 
