@@ -1,603 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- TODO: Update with new gtag Global site tag (gtag.js) - Google Analytics -->
 
-    <!-- Title of the webpage -->
-    <title>Developer Student Clubs MSIT</title>
+<head>
+  <!-- TODO: Update with new gtag Global site tag (gtag.js) - Google Analytics -->
 
-    <!-- Favicon linking -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="icons/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="icons/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="icons/favicons/favicon-16x16.png"
-    />
+  <!-- Title of the webpage -->
+  <title>Developer Student Clubs MSIT</title>
 
-    <!--Links to css CDN's-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow:100,200,500"
-      rel="stylesheet"
-    />
+  <!-- Favicon linking -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png" />
 
-    <!-- FontAwesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-    />
+  <!--Links to css CDN's-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,500" rel="stylesheet" />
 
-    <!-- Links to css files -->
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/svg.css" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
 
-    <!--Meta tags for SEO and Responsiveness-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#141414" />
-    <meta
-      name="Description"
-      content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills."
-    />
+  <!-- Links to css files -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/svg.css" />
 
-    <!-- Adding PWA Capabilities -->
-    <link rel="manifest" href="manifest.json" />
+  <!--Meta tags for SEO and Responsiveness-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141414" />
+  <meta name="Description"
+    content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills." />
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "DSC MSIT",
-        "logo": "https://dsc.msit.in/images/DSC-Light-Logo.png",
-        "url": "https://dsc.msit.in/",
-        "description": "DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills",
-        "email": "dscmsit@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Maharaja Surajmal Institute of Technology",
-          "addressLocality": "C-4, Janakpuri",
-          "addressRegion": "New Delhi",
-          "addressCountry": "India",
-          "postalCode": "110058"
-        },
-        "foundingDate": "2019",
-        "sameAs": [
-          "https://www.linkedin.com/company/dsc-msit/"
-          "https://www.instagram.com/dscmsit",
-          "https://www.facebook.com/dscmsit"
-        ]
-      }
-    </script>
+  <!-- Adding PWA Capabilities -->
+  <link rel="manifest" href="manifest.json" />
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js").then(function() {
-          console.log("Service Worker Registered");
-        });
-      }
-    </script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DSC MSIT",
+      "logo": "https://dsc.msit.in/images/DSC-Light-Logo.png",
+      "url": "https://dsc.msit.in/",
+      "description": "DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills",
+      "email": "dscmsit@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maharaja Surajmal Institute of Technology",
+        "addressLocality": "C-4, Janakpuri",
+        "addressRegion": "New Delhi",
+        "addressCountry": "India",
+        "postalCode": "110058"
+      },
+      "foundingDate": "2019",
+      "sameAs": [
+        "https://www.linkedin.com/company/dsc-msit/"
+        "https://www.instagram.com/dscmsit",
+        "https://www.facebook.com/dscmsit"
+      ]
+    }
+  </script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-messaging.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js").then(function () {
+        console.log("Service Worker Registered");
+      });
+    }
+  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDekMXWA6fD3xHPV9JSWySw_otmPwcpccSUY",
-        authDomain: "dsc-updates.firebaseapp.com",
-        databaseURL: "https://dsc-updates.firebaseio.com",
-        projectId: "dsc-updates",
-        storageBucket: "dsc-updates.appspot.com",
-        messagingSenderId: "30390866cc8455",
-        appId: "1:303908668455:web:c0ae9791a1b7976330dfa02",
-        measurementId: "G-Q1SGQCL6cBJ"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-  </head>
+  <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-messaging.js"></script>
 
-  <body>
-    <div class="success-message barlow-medium" id="success-message"></div>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDekMXWA6fD3xHPV9JSWySw_otmPwcpccSUY",
+      authDomain: "dsc-updates.firebaseapp.com",
+      databaseURL: "https://dsc-updates.firebaseio.com",
+      projectId: "dsc-updates",
+      storageBucket: "dsc-updates.appspot.com",
+      messagingSenderId: "30390866cc8455",
+      appId: "1:303908668455:web:c0ae9791a1b7976330dfa02",
+      measurementId: "G-Q1SGQCL6cBJ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
 
-    <div class="error-message barlow-medium" id="error-message"></div>
+<body>
+  <div class="success-message barlow-medium" id="success-message"></div>
 
-    <div class="change-device-message barlow-medium" id="error-message">
-      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-        Your email is registered to a another device. Would you like to shift to
-        this devices for notifications?
-      </p>
+  <div class="error-message barlow-medium" id="error-message"></div>
 
-      <div data-aos="fade-up" class="button-maker">
-        <div class="barlow-thin button-text" id="change-deviceID">
-          Yes
-        </div>
-      </div>
+  <div class="change-device-message barlow-medium" id="error-message">
+    <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+      Your email is registered to a another device. Would you like to shift to
+      this devices for notifications?
+    </p>
 
-      <div data-aos="fade-up" class="button-maker">
-        <div class="barlow-thin button-text" id="no-change-deviceID">
-          No
-        </div>
+    <div data-aos="fade-up" class="button-maker">
+      <div class="barlow-thin button-text" id="change-deviceID">
+        Yes
       </div>
     </div>
-    <div class="phone-toggler">
-      <i
-        class="fas fa-moon fa-lg LightLogo"
-        id="moon"
-        onclick="toggleDark();checkDark();"
-      ></i>
-      <i
-        class="fas fa-sun fa-lg DarkLogo"
-        id="sun"
-        onclick="toggleDark();checkDark();"
-      ></i>
+
+    <div data-aos="fade-up" class="button-maker">
+      <div class="barlow-thin button-text" id="no-change-deviceID">
+        No
+      </div>
+    </div>
+  </div>
+  <div class="phone-toggler">
+    <i class="fas fa-moon fa-lg LightLogo" id="moon" onclick="toggleDark();checkDark();"></i>
+    <i class="fas fa-sun fa-lg DarkLogo" id="sun" onclick="toggleDark();checkDark();"></i>
+  </div>
+
+  <div class="main-menu">
+    <div class="main-menu-close" id="menu-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20.332" height="20.332" viewBox="0 0 20.332 20.332">
+        <g id="Group_8" data-name="Group 8" transform="translate(-1042.445 -266.495)">
+          <path id="Path_9" data-name="Path 9" d="M1042.8,266.849l19.625,19.625" fill="none" stroke="#141414"
+            stroke-width="1" />
+          <path id="Path_10" data-name="Path 10" d="M1062.423,266.849,1042.8,286.474" fill="none" stroke="#141414"
+            stroke-width="1" />
+        </g>
+      </svg>
     </div>
 
-    <div class="main-menu">
-      <div class="main-menu-close" id="menu-close">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20.332"
-          height="20.332"
-          viewBox="0 0 20.332 20.332"
-        >
-          <g
-            id="Group_8"
-            data-name="Group 8"
-            transform="translate(-1042.445 -266.495)"
-          >
-            <path
-              id="Path_9"
-              data-name="Path 9"
-              d="M1042.8,266.849l19.625,19.625"
-              fill="none"
-              stroke="#141414"
-              stroke-width="1"
-            />
-            <path
-              id="Path_10"
-              data-name="Path 10"
-              d="M1062.423,266.849,1042.8,286.474"
-              fill="none"
-              stroke="#141414"
-              stroke-width="1"
-            />
-          </g>
-        </svg>
-      </div>
+    <!-- For small viewport hamburger -->
+    <div class="main-menu-item-holder">
+      <h2 class="barlow-extralight text-center" id="home">Home</h2>
+      <h2 class="barlow-extralight text-center" id="our-work">Our Focus</h2>
+      <h2 class="barlow-extralight text-center" id="team">
+        <a href="./team.html">The Team</a>
+      </h2>
+      <h2 class="barlow-extralight text-center" id="updates">Events</h2>
+      <h2 class="barlow-extralight text-center" id="contact">Contact Us</h2>
+    </div>
+    <img src="images/menu-image.svg" class="main-menu-image" alt="Open Menu" />
+  </div>
 
-      <!-- For small viewport hamburger -->
-      <div class="main-menu-item-holder">
-        <h2 class="barlow-extralight text-center" id="home">Home</h2>
-        <h2 class="barlow-extralight text-center" id="our-work">Our Focus</h2>
-        <h2 class="barlow-extralight text-center" id="team">
-          <a href="./team.html">The Team</a>
-        </h2>
-        <h2 class="barlow-extralight text-center" id="updates">Events</h2>
-        <h2 class="barlow-extralight text-center" id="contact">Contact Us</h2>
-      </div>
-      <img
-        src="images/menu-image.svg"
-        class="main-menu-image"
-        alt="Open Menu"
-      />
+  <div class="navbar">
+    <div class="navbar-dsc-logo">
+      <img data-aos="fade-up" src="images/DSC-MSIT-Dark-Logo.png" class="logo-nav" alt="DSC MSIT" />
+      <img data-aos="fade-up" src="images/DSC-MSIT-Light-Logo.png" class="logo-nav-light" alt="DSC MSIT" />
     </div>
 
-    <div class="navbar">
-      <div class="navbar-dsc-logo">
-        <img
-          data-aos="fade-up"
-          src="images/DSC-MSIT-Dark-Logo.png"
-          class="logo-nav"
-          alt="DSC MSIT"
-        />
-        <img
-          data-aos="fade-up"
-          src="images/DSC-MSIT-Light-Logo.png"
-          class="logo-nav-light"
-          alt="DSC MSIT"
-        />
+    <div class="menu barlow-extralight">
+      <div class="menu-item" id="home-desk">
+        Home
       </div>
-
-      <div class="menu barlow-extralight">
-        <div class="menu-item" id="home-desk">
-          Home
-        </div>
-        <div class="menu-item" id="our-work-desk">
-          Our Focus
-        </div>
-        <div class="menu-item" id="team-desk">
-          <a href="./team.html">The Team</a>
-        </div>
-        <div class="menu-item" id="updates-desk">
-          Events
-        </div>
-        <div class="menu-item" id="contact-desk">
-          Contact Us
-        </div>
-        <!-- <div class="menu-item">
+      <div class="menu-item" id="our-work-desk">
+        Our Focus
+      </div>
+      <div class="menu-item" id="team-desk">
+        <a href="./team.html">The Team</a>
+      </div>
+      <div class="menu-item" id="updates-desk">
+        Events
+      </div>
+      <div class="menu-item" id="contact-desk">
+        Contact Us
+      </div>
+      <!-- <div class="menu-item">
         <i class="fas fa-moon fa-lg LightLogo" id="moon" onclick="toggleDark();checkDark();"></i>
         <i class="fas fa-sun fa-lg DarkLogo" id="sun" onclick="toggleDark();checkDark();"></i>
       </div> -->
-      </div>
-
-      <div class="menu-phone" id="menu-open">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="36.68"
-          height="21"
-          viewBox="0 0 36.68 21"
-        >
-          <g
-            id="Group_7"
-            data-name="Group 7"
-            transform="translate(-1000.435 -266.349)"
-          >
-            <path
-              id="Path_6"
-              data-name="Path 6"
-              d="M-223.854-311.151h27.406"
-              transform="translate(1233.563 578)"
-              fill="none"
-              stroke="#141414"
-              stroke-width="1"
-            />
-            <path
-              id="Path_7"
-              data-name="Path 7"
-              d="M-223.854-311.151h18.34"
-              transform="translate(1242.629 588)"
-              fill="none"
-              stroke="#141414"
-              stroke-width="1"
-            />
-            <path
-              id="Path_8"
-              data-name="Path 8"
-              d="M-223.854-311.151h36.68"
-              transform="translate(1224.289 598)"
-              fill="none"
-              stroke="#141414"
-              stroke-width="1"
-            />
-          </g>
-        </svg>
-      </div>
     </div>
 
-    <div class="main" id="home-scroll">
-      <div class="main-text-holder">
-        <div class="main-text-holder-heading">
-          <img
-            data-aos="fade-up"
-            src="images/DSC-Dark-Logo.png"
-            class="logo"
-            alt="DSC MSIT"
-          />
-          <img
-            data-aos="fade-up"
-            src="images/DSC-Light-Logo.png"
-            class="logo-light"
-            alt="DSC MSIT"
-          />
+    <div class="menu-phone" id="menu-open">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36.68" height="21" viewBox="0 0 36.68 21">
+        <g id="Group_7" data-name="Group 7" transform="translate(-1000.435 -266.349)">
+          <path id="Path_6" data-name="Path 6" d="M-223.854-311.151h27.406" transform="translate(1233.563 578)"
+            fill="none" stroke="#141414" stroke-width="1" />
+          <path id="Path_7" data-name="Path 7" d="M-223.854-311.151h18.34" transform="translate(1242.629 588)"
+            fill="none" stroke="#141414" stroke-width="1" />
+          <path id="Path_8" data-name="Path 8" d="M-223.854-311.151h36.68" transform="translate(1224.289 598)"
+            fill="none" stroke="#141414" stroke-width="1" />
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="main" id="home-scroll">
+    <div class="main-text-holder">
+      <div class="main-text-holder-heading">
+        <img data-aos="fade-up" src="images/DSC-Dark-Logo.png" class="logo" alt="DSC MSIT" />
+        <img data-aos="fade-up" src="images/DSC-Light-Logo.png" class="logo-light" alt="DSC MSIT" />
+      </div>
+
+      <h2 data-aos="fade-up" class="barlow-medium">
+        Powered by Google Developers
+      </h2>
+
+      <p data-aos="fade-up" class="barlow-extralight continous-text">
+        At DSC MSIT, our aim is to learn and teach. Developers, designers and
+        managers come together under one roof to create a community which
+        inspires thousands. Join Us!
+      </p>
+    </div>
+
+    <div class="main-down-arrow" id="down-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
+        <g id="Group_2" data-name="Group 2" transform="translate(-966 -967.48)">
+          <path id="Path_1" data-name="Path 1" d="M982,967.98V1011.1" transform="translate(-1.5)" fill="none"
+            stroke="#141414" stroke-linecap="round" stroke-width="1" />
+          <path id="Path_2" data-name="Path 2" d="M966.813,997.8l13.973,13.577L994.363,997.8"
+            transform="translate(-0.313)" fill="none" stroke="#141414" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1" />
+        </g>
+      </svg>
+    </div>
+
+    <img src="images/landing.svg" class="main-image" alt="Home Page" />
+  </div>
+
+  <div class="container-main holded-container" id="our-work-scroll">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Our Focus
+    </h1>
+
+    <p data-aos="fade-up" class="barlow-extralight continous-text text-center extra-break">
+      We think slightly out of the box, we believe that a club’s resources
+      must not only be channeled into conducting events but also to propagate
+      learning and teaching, symbiotically.
+    </p>
+
+    <p data-aos="fade-up" class="barlow-extralight text-center">
+      We have seen many MSITians shoot across the sky and we, at DSC MSIT, aim
+      towards creating an educative realm that would help everyone learn the
+      required skills and make their mark!
+    </p>
+  </div>
+
+  <div class="container-main holded-container" id="team-scroll">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Get to know the team
+    </h1>
+
+    <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+      We’ve got a strong team filled with caffeine addicted developers,
+      gradients loving designers and machine like working managers.
+    </p>
+
+    <a href="./team.html">
+      <div data-aos="fade-up" class="button-maker">
+        <div class="barlow-thin button-text">
+          The Team
         </div>
-
-        <h2 data-aos="fade-up" class="barlow-medium">
-          Powered by Google Developers
-        </h2>
-
-        <p data-aos="fade-up" class="barlow-extralight continous-text">
-          At DSC MSIT, our aim is to learn and teach. Developers, designers and
-          managers come together under one roof to create a community which
-          inspires thousands. Join Us!
-        </p>
       </div>
+    </a>
+  </div>
 
-      <div class="main-down-arrow" id="down-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
-          <g
-            id="Group_2"
-            data-name="Group 2"
-            transform="translate(-966 -967.48)"
-          >
-            <path
-              id="Path_1"
-              data-name="Path 1"
-              d="M982,967.98V1011.1"
-              transform="translate(-1.5)"
-              fill="none"
-              stroke="#141414"
-              stroke-linecap="round"
-              stroke-width="1"
-            />
-            <path
-              id="Path_2"
-              data-name="Path 2"
-              d="M966.813,997.8l13.973,13.577L994.363,997.8"
-              transform="translate(-0.313)"
-              fill="none"
-              stroke="#141414"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1"
-            />
-          </g>
-        </svg>
-      </div>
+  <div class="container-main holded-container">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Our Projects
+    </h1>
 
-      <img src="images/landing.svg" class="main-image" alt="Home Page" />
-    </div>
+    <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+      We are actively conducting workshops, and also contributing to the
+      development side by churning out high quality projects.
+    </p>
 
-    <div class="container-main holded-container" id="our-work-scroll">
-      <h1 data-aos="fade-up" class="barlow-medium text-center">
-        Our Focus
-      </h1>
-
-      <p
-        data-aos="fade-up"
-        class="barlow-extralight continous-text text-center extra-break"
-      >
-        We think slightly out of the box, we believe that a club’s resources
-        must not only be channeled into conducting events but also to propagate
-        learning and teaching, symbiotically.
-      </p>
-
-      <p data-aos="fade-up" class="barlow-extralight text-center">
-        We have seen many MSITians shoot across the sky and we, at DSC MSIT, aim
-        towards creating an educative realm that would help everyone learn the
-        required skills and make their mark!
-      </p>
-    </div>
-
-    <div class="container-main holded-container" id="team-scroll">
-      <h1 data-aos="fade-up" class="barlow-medium text-center">
-        Get to know the team
-      </h1>
-
-      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-        We’ve got a strong team filled with caffeine addicted developers,
-        gradients loving designers and machine like working managers.
-      </p>
-
-      <a href="./team.html">
-        <div data-aos="fade-up" class="button-maker">
+    <div data-aos="fade-up" class="buttons">
+      <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
+        <div class="button-maker" id="projects-button">
           <div class="barlow-thin button-text">
-            The Team
+            Projects
           </div>
         </div>
       </a>
     </div>
-
-    <div class="container-main holded-container" id="updates-scroll">
-      <h1 data-aos="fade-up" class="barlow-medium text-center">
-        Our Events
-      </h1>
-
-      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-        We are actively conducting workshops, and also contributing to the
-        development side by churning out high quality projects.
-      </p>
-
-      <div data-aos="fade-up" class="buttons">
-        <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
-          <div class="button-maker" id="projects-button">
-            <div class="barlow-thin button-text">
-              Projects
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- <div class="container container-main " id="updates-scroll">
+  </div>
+  <div class="container container-main" id="updates-scroll">
     <h1 data-aos="fade-up" class="barlow-medium text-center">
       Webinars and Events
     </h1>
     <div class="webinar" data-aos="fade-up">
-      <div class="card " style="width: 18.75rem;" data-aos="fade-up">
-        <iframe class="clip" src="https://www.youtube.com/embed/iR5WIknxdkY" frameborder="0"
+      <div class="card" data-aos="fade-up">
+        <iframe class="clip" src="https://www.youtube.com/embed/E1BchErzRgM" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
         <div class="card-body">
-          <h5 class="card-title barlow-medium">Card title</h5>
+          <h5 class="card-title barlow-medium">
+            Introduction to Git & Github
+          </h5>
+          <p class="card-text barlow-extralight extra-break">
+            Start up guide on how to use git and github, so that journey to
+            become a successful developer can go as easy as possible
+          </p>
+        </div>
+      </div>
+      <!-- <div class="card" data-aos="fade-up">
+        <iframe class="clip" src="https://www.youtube.com/embed/E1BchErzRgM" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title barlow-medium">Introduction to Git & Github</h5>
           <p class="card-text barlow-extralight extra-break">
             Some quick example text to build on the card title and make up
             the bulk of the card's content.
           </p>
         </div>
       </div>
-      <div class="card" style="width: 18.75rem;" data-aos="fade-up">
-        <iframe class="clip" src="https://www.youtube.com/embed/iR5WIknxdkY" frameborder="0"
+      <div class="card" data-aos="fade-up">
+        <iframe class="clip" src="https://www.youtube.com/embed/E1BchErzRgM" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
         <div class="card-body">
-          <h5 class="card-title barlow-medium">Card title</h5>
+          <h5 class="card-title barlow-medium">Introduction to Git & Github</h5>
           <p class="card-text barlow-extralight extra-break">
             Some quick example text to build on the card title and make up
             the bulk of the card's content.
           </p>
         </div>
-      </div>
-      <div class="card" style="width: 18.75rem;" data-aos="fade-up">
-        <iframe class="clip" src="https://www.youtube.com/embed/iR5WIknxdkY" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title barlow-medium">Card title</h5>
-          <p class="card-text barlow-extralight extra-break">
-            Some quick example text to build on the card title and make up
-            the bulk of the card's content.
-          </p>
-        </div>
-      </div>
+      </div> -->
     </div>
-    <a href="./videos.html">
+    <!-- <a href="./videos.html">
       <div data-aos="fade-up" class="button-maker">
         <div class="barlow-thin button-text">
           View More
         </div>
       </div>
-    </a>
-  </div> -->
+    </a> -->
+  </div>
 
-    <div class="container-main holded-container" id="contact-scroll">
-      <h1 data-aos="fade-up" class="barlow-medium text-center">
-        Contact us
-      </h1>
+  <div class="container-main holded-container" id="contact-scroll">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Contact us
+    </h1>
 
-      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-        We’re very active on social media.
-      </p>
+    <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+      We’re very active on social media.
+    </p>
 
-      <div data-aos="fade-up" class="icons small-icons">
-        <a
-          href="https://www.instagram.com/dscmsit/"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/Instagram.svg"
-            class="circle-icon"
-            alt="DSC MSIT Instagram"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/dsc-msit/"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/Linkedin.svg"
-            class="circle-icon"
-            alt="DSC MSIT Linkedin"
-          />
-        </a>
-        <a
-          href="https://www.facebook.com/dscmsit/"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/Facebook.svg"
-            class="circle-icon"
-            alt="DSC MSIT Facebook"
-          />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCuCF8OKyllfpjxd_ylCsNog"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/Youtube.svg"
-            class="circle-icon"
-            alt="DSC MSIT Youtube"
-          />
-        </a>
-        <a
-          href="https://www.medium.com/dsc-msit/"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            src="images/Medium.svg"
-            class="circle-icon"
-            alt="DSC MSIT Medium"
-          />
-        </a>
-        <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
-          <img
-            src="images/Github.svg"
-            class="circle-icon"
-            alt="DSC MSIT GitHub"
-          />
-        </a>
-      </div>
-    </div>
-
-    <div class="container-main holded-container">
-      <h1 data-aos="fade-up" class="barlow-medium text-center">
-        Submit an idea
-      </h1>
-
-      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-        Didn’t get the chance to implement your favourite idea? Why not give us
-        a chance to bring it to real life.
-      </p>
-
-      <a
-        href="https://forms.gle/ts71uWAVdUhfZCWz5"
-        target="_blank"
-        rel="noopener"
-      >
-        <div data-aos="fade-up" class="button-maker">
-          <div class="barlow-thin button-text">
-            Submit idea
-          </div>
-        </div>
+    <div data-aos="fade-up" class="icons small-icons">
+      <a href="https://www.instagram.com/dscmsit/" target="_blank" rel="noopener">
+        <img src="images/Instagram.svg" class="circle-icon" alt="DSC MSIT Instagram" />
+      </a>
+      <a href="https://www.linkedin.com/company/dsc-msit/" target="_blank" rel="noopener">
+        <img src="images/Linkedin.svg" class="circle-icon" alt="DSC MSIT Linkedin" />
+      </a>
+      <a href="https://www.facebook.com/dscmsit/" target="_blank" rel="noopener">
+        <img src="images/Facebook.svg" class="circle-icon" alt="DSC MSIT Facebook" />
+      </a>
+      <a href="https://www.youtube.com/channel/UCuCF8OKyIIfpjxd_yICsNog" target="_blank" rel="noopener">
+        <img src="images/Youtube.svg" class="circle-icon" alt="DSC MSIT Youtube" />
+      </a>
+      <a href="https://www.medium.com/dsc-msit/" target="_blank" rel="noopener">
+        <img src="images/Medium.svg" class="circle-icon" alt="DSC MSIT Medium" />
+      </a>
+      <a href="https://github.com/dscmsit" target="_blank" rel="noopener">
+        <img src="images/Github.svg" class="circle-icon" alt="DSC MSIT GitHub" />
       </a>
     </div>
+  </div>
 
-    <div class="container-main holded-container" id="stayupdated">
-      <h1 data-aos="fade-up" class="barlow-medium text-center">
-        Stay Updated
-      </h1>
+  <div class="container-main holded-container">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Submit an idea
+    </h1>
 
-      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-        Want to stay updated with the latest news about DSC MSIT ? Enter you
-        email address and allow notifications.
-      </p>
+    <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+      Didn’t get the chance to implement your favourite idea? Why not give us
+      a chance to bring it to real life.
+    </p>
 
-      <input
-        data-aos="fade-up"
-        type="text"
-        placeholder="Enter Email"
-        class="text-field-maker"
-        id="email"
-      />
-
-      <div data-aos="fade-up" class="button-maker" id="get-updates">
+    <a href="https://forms.gle/ts71uWAVdUhfZCWz5" target="_blank" rel="noopener">
+      <div data-aos="fade-up" class="button-maker">
         <div class="barlow-thin button-text">
-          Get Updates
+          Submit idea
         </div>
       </div>
-    </div>
+    </a>
+  </div>
 
-    <div class="footer container-main  container-main-last">
-      <div
-        class="dark-light-toggle barlow-medium text-center"
-        id="dark-light-toggle"
-      >
-        <p>I want dark mode</p>
-      </div>
-      <div class="container-main holded-container" id="stayupdated">
-        <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-          Created and Maintained by DSC Team
-          <br />
-          &copy; 2020 <b>DSC MSIT</b>, made with love ❤️
-        </p>
+  <div class="container-main holded-container" id="stayupdated">
+    <h1 data-aos="fade-up" class="barlow-medium text-center">
+      Stay Updated
+    </h1>
+
+    <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+      Want to stay updated with the latest news about DSC MSIT ? Enter you
+      email address and allow notifications.
+    </p>
+
+    <input data-aos="fade-up" type="text" placeholder="Enter Email" class="text-field-maker" id="email" />
+
+    <div data-aos="fade-up" class="button-maker" id="get-updates">
+      <div class="barlow-thin button-text">
+        Get Updates
       </div>
     </div>
+  </div>
 
-    <!--Links to JS files and JS CDN's-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--For theme mode-->
-    <script src="js/jq.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <div class="footer container-main  container-main-last">
+    <div class="dark-light-toggle barlow-medium text-center" id="dark-light-toggle">
+      <p>I want dark mode</p>
+    </div>
+    <div class="container-main holded-container" id="stayupdated">
+      <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+        Created and Maintained by DSC Team
+        <br />
+        &copy; 2020 <b>DSC MSIT</b>, made with love ❤️
+      </p>
+    </div>
+  </div>
+
+  <!--Links to JS files and JS CDN's-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--For theme mode-->
+  <script src="js/jq.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

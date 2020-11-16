@@ -11,14 +11,12 @@
 - Netlify will create a preview inside pull request, please check if your work is fine.
 - If the PR is related to any front end change, please attach relevant screenshots in the pull request description.
 
-
 ## Netlify Deployment
 
 - You can find the netlify deployment at https://dscmsit.netlify.app/ based on the `development branch`
 - It might include those changes as well, which are in currently in development and are worked upon
 - These changes might not be published yet to the official website.
 - So it's recommended to go through the netlify deployed website first before raising an issue or making any pull request.
-
 
 ## Quick start
 
@@ -27,7 +25,6 @@ Quick start options:
 - [Download from Github](https://github.com/dscmsit/dscmsit.github.io.git).
 - Clone the repo: `https://github.com/dscmsit/dscmsit.github.io.git`.
 - `npm install` to install all the devDependencies
-
 
 ## What's included
 
