@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <!-- Title of the webpage -->
+  <title>Developer Student Clubs MSIT</title>
+
+  <!-- Favicon linking -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png" />
+
+  <!--Links to css CDN's-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,500" rel="stylesheet" />
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+
+  <!-- Links to css files -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/svg.css" />
+  <link rel="stylesheet" href="css/team1.css" />
+
+  <!--Meta tags for SEO and Responsiveness-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141414" />
+  <meta name="Description"
+    content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills." />
+    </head>
+    <body>
+        <!-- Navbar Start -->
+        <div class="success-message barlow-medium" id="success-message"></div>
+
+        <div class="error-message barlow-medium" id="error-message"></div>
+      
+        <div class="change-device-message barlow-medium" id="error-message">
+          <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
+            Your email is registered to a another device. Would you like to shift to
+            this devices for notifications?
+          </p>
+      
+          <div data-aos="fade-up" class="button-maker">
+            <div class="barlow-thin button-text" id="change-deviceID">
+              Yes
+            </div>
+          </div>
+      
+          <div data-aos="fade-up" class="button-maker">
+            <div class="barlow-thin button-text" id="no-change-deviceID">
+              No
+            </div>
+          </div>
+        </div>
+        <div class="phone-toggler">
+          <i class="fas fa-moon fa-lg LightLogo" id="moon" onclick="toggleDark();checkDark();"></i>
+          <i class="fas fa-sun fa-lg DarkLogo" id="sun" onclick="toggleDark();checkDark();"></i>
+        </div>
+      
+        <div class="main-menu">
+          <div class="main-menu-close" id="menu-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.332" height="20.332" viewBox="0 0 20.332 20.332">
+              <g id="Group_8" data-name="Group 8" transform="translate(-1042.445 -266.495)">
+                <path id="Path_9" data-name="Path 9" d="M1042.8,266.849l19.625,19.625" fill="none" stroke="#141414"
+                  stroke-width="1" />
+                <path id="Path_10" data-name="Path 10" d="M1062.423,266.849,1042.8,286.474" fill="none" stroke="#141414"
+                  stroke-width="1" />
+              </g>
+            </svg>
+          </div>
+      
+          <!-- For small viewport hamburger -->
+          <div class="main-menu-item-holder">
+            <h2 class="barlow-extralight text-center" id="home">Home</h2>
+            <h2 class="barlow-extralight text-center" id="our-work">Our Focus</h2>
+            <h2 class="barlow-extralight text-center" id="team">
+              <a href="./team.html">The Team</a>
+            </h2>
+            <h2 class="barlow-extralight text-center" id="updates">Events</h2>
+            <h2 class="barlow-extralight text-center" id="contact">Contact Us</h2>
+          </div>
+          <img src="images/menu-image.svg" class="main-menu-image" alt="Open Menu" />
+        </div>
+      
+        <div class="navbar">
+          <div class="navbar-dsc-logo">
+            <img data-aos="fade-up" src="images/DSC-MSIT-Dark-Logo.png" class="logo-nav" alt="DSC MSIT" />
+            <img data-aos="fade-up" src="images/DSC-MSIT-Light-Logo.png" class="logo-nav-light" alt="DSC MSIT" />
+          </div>
+      
+          <div class="menu barlow-extralight">
+            <div class="menu-item" id="home-desk">
+              Home
+            </div>
+            <div class="menu-item" id="our-work-desk">
+              Our Focus
+            </div>
+            <div class="menu-item" id="team-desk">
+              <a href="./team.html">The Team</a>
+            </div>
+            <div class="menu-item" id="updates-desk">
+              Events
+            </div>
+            <div class="menu-item" id="contact-desk">
+              Contact Us
+            </div>
+            <!-- <div class="menu-item">
+              <i class="fas fa-moon fa-lg LightLogo" id="moon" onclick="toggleDark();checkDark();"></i>
+              <i class="fas fa-sun fa-lg DarkLogo" id="sun" onclick="toggleDark();checkDark();"></i>
+            </div> -->
+          </div>
+      
+          <div class="menu-phone" id="menu-open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36.68" height="21" viewBox="0 0 36.68 21">
+              <g id="Group_7" data-name="Group 7" transform="translate(-1000.435 -266.349)">
+                <path id="Path_6" data-name="Path 6" d="M-223.854-311.151h27.406" transform="translate(1233.563 578)"
+                  fill="none" stroke="#141414" stroke-width="1" />
+                <path id="Path_7" data-name="Path 7" d="M-223.854-311.151h18.34" transform="translate(1242.629 588)"
+                  fill="none" stroke="#141414" stroke-width="1" />
+                <path id="Path_8" data-name="Path 8" d="M-223.854-311.151h36.68" transform="translate(1224.289 598)"
+                  fill="none" stroke="#141414" stroke-width="1" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      
+        <div class="main" id="home-scroll">
+          <!-- <div class="main-text-holder"> -->
+            <div class="main-text-holder-heading">
+              <img data-aos="fade-up" src="images/DSC-Dark-Logo.png" class="logo" alt="DSC MSIT" />
+              <img data-aos="fade-up" src="images/DSC-Light-Logo.png" class="logo-light" alt="DSC MSIT" />
+            </div>
+        
+
+        <!-- Navbar End -->
+
+        <!-- About Team Start -->
+            <div class="aboutTeam">
+                <h1>About The Team</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in
+                    purus placerat, vehicula sapien a, faucibus mi. Sed egestas, ante eget
+                    venenatis laoreet, enim mi rutrum nisi, sit amet viverra elit sapien a massa.
+                    Nullam non mi porttitor, ullamcorper enim ac, laoreet eros.
+                    Donec ullamcorper lacinia pharetra. </p>
+            </div>
+        <!-- About Team End -->
+
+        <!-- Core Team Start -->
+        <div class="coreTeam">
+          <h1>Core Team</h1>
+          <br>
+          <select onclick="selectTeam()" class="minimal" id="mySelect">
+            <option selected>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+          </select>  
+        </div>
+
+        <!-- Team Cards Start from here -->
+        <div id="mainTeam">
+          <!-- 2020 -->
+          <div class="row" id="t020">
+            
+            <div class="col-lg-1">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2020 end -->
+
+          <!-- 2019 -->
+           <div class="row" id="t019">
+             <div class="col-lg-5"></div>
+            <div class="col-lg-1">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                   <p class="card-text">2019</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+          <!-- 2019 end -->
+
+            <!-- 2018 -->
+           <div class="row" id="t018">
+             <div class="col-lg-5"></div>
+            <div class="col-lg-1">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                   <p class="card-text">2018</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+          <!-- 2018 end -->
+        </div>
+        <!-- Team Cards end here -->
+        <!-- Core Team End -->
+
+
+
+
+          <!--Links to JS files and JS CDN's-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--For theme mode-->
+  <script src="js/jq.js"></script>
+  <script src="js/index.js"></script>
+  <script src ="js/team1.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    </body>
+</html>
