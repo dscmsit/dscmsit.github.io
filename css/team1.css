@@ -1,9 +1,11 @@
 .aboutTeam{
-    margin: auto;
-    /* width: 50%; */
-    
+    margin: auto;    
     padding: 40px;
     margin-top: 5%;
+}
+p{
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;   
 }
 .coreTeam{ 
     margin-top: 5%;
@@ -138,7 +140,8 @@ select {
   .cardC {
     margin: 50px;
     box-shadow: 1px 2px 3px #888888;
-    width: 300px;
+    width: 340px;
+    height: 353px;
     border-radius: 20px;
     padding: 160px 20px 20px 20px;
     position: relative;
@@ -150,51 +153,47 @@ select {
     padding-top: 10px;
   }
   
-  .cardC .content p {
+  /* .cardC .content p {
     color: #888888;
-  }
+  } */
   /* Cards End */
   
   .img {
     transition-duration: 200ms;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
     left: 10px;
-    background: rgb(255, 0, 99);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 0, 99, 1) 35%,
-      rgba(247, 32, 32, 1) 100%
-    );
+   
     top: -50px;
     border-radius: 20px;
-    box-shadow: 1px 2px 3px #999999;
+    /* box-shadow: 1px 2px 3px #999999; */
   }
   .img img{
    width: 200px;
    height: 200px;
-   border-radius: 10px;
+   border-radius: 50%;
   }
   
-  .cardC:hover .img {
-    transform: scale(1.2) translateX(-70px) translateY(60px);
-    width: 100px;
+  .cardC:hover  {
+    /* transform: scale(1.2) translateX(-70px) translateY(60px); */
+    /* width: 100px;
     height: 100px;
-    border-radius: 50px;
+    border-radius: 50px; */
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
   }
+  
   .cardC:hover .img img{
-    width: 100px;
+    /* width: 100px;
     height: 100px;
-    border-radius: 50px;
+    border-radius: 50px; */
   }
   .cardC:hover {
-    padding-top: 20px;
-    padding-left: 50px;
+    /* padding-top: 20px;
+    padding-left: 50px; */
   }
-  .cardC:hover h5 {
-    display: none;
-  }
+  
   .cardC .content h5 {
     float: right;
     color: red;
@@ -202,20 +201,15 @@ select {
     font-size: 20px;
   }
   @media only screen and (max-width:400px){
-    .img{
-      width:250px;
-    }
-    .img img{
-      width: 250px;
-    }
+    
     .cardC:hover .img {
-      transform: scale(1.2) translateX(-40px) translateY(60px);
+      /* transform: scale(1.2) translateX(-40px) translateY(60px);
       width:70px;
-      height: 70px;
+      height: 70px; */
     }
     .cardC:hover .img img{
-      width:70px;
-      height: 70px;
+      /* width:70px;
+      height: 70px; */
     }
   }
 
