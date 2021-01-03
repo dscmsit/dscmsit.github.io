@@ -50,149 +50,155 @@
             content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills."/>
     </head>
     <body>
-        <!-- Navbar Start -->
-        <div class="success-message barlow-medium" id="success-message"></div>
+        <!-- Navbar start -->
 
-        <div class="error-message barlow-medium" id="error-message"></div>
-
-        <div class="change-device-message barlow-medium" id="error-message">
-            <p data-aos="fade-up" class="barlow-extralight text-center extra-break">
-                Your email is registered to a another device. Would you like to shift to this
-                devices for notifications?
-            </p>
-
-            <div data-aos="fade-up" class="button-maker">
-                <div class="barlow-thin button-text" id="change-deviceID">
-                    Yes
-                </div>
-            </div>
-
-            <div data-aos="fade-up" class="button-maker">
-                <div class="barlow-thin button-text" id="no-change-deviceID">
-                    No
-                </div>
-            </div>
+    <!-- Navbar DSC Theme icons -->
+    <div class="phone-toggler">
+        <i
+          class="fas fa-moon fa-lg LightLogo"
+          id="moon"
+          onclick="toggleDark();checkDark();"
+        ></i>
+        <i
+          class="fas fa-sun fa-lg DarkLogo"
+          id="sun"
+          onclick="toggleDark();checkDark();"
+        ></i>
+      </div>
+  
+      <!-- Navbar -->
+      <div class="main-menu">
+        <div class="main-menu-close" id="menu-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20.332"
+            height="20.332"
+            viewBox="0 0 20.332 20.332"
+          >
+            <g
+              id="Group_8"
+              data-name="Group 8"
+              transform="translate(-1042.445 -266.495)"
+            >
+              <path
+                id="Path_9"
+                data-name="Path 9"
+                d="M1042.8,266.849l19.625,19.625"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M1062.423,266.849,1042.8,286.474"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
         </div>
-        <div class="phone-toggler">
-            <i
-                class="fas fa-moon fa-lg LightLogo"
-                id="moon"
-                onclick="toggleDark();checkDark();"></i>
-            <i
-                class="fas fa-sun fa-lg DarkLogo"
-                id="sun"
-                onclick="toggleDark();checkDark();"></i>
+  
+        <!-- For small viewport hamburger -->
+        <div class="main-menu-item-holder">
+          <h2 class="barlow-extralight text-center" id="home">
+            <a href="./index.html">Home</a>
+          </h2>
+          <!-- <h2 class="barlow-extralight text-center" id="our-work"><a href="./index.html#our-work-desk">Our Focus</a></h2> -->
+          
+          <!-- <h2 class="barlow-extralight text-center" id="updates"><a href="./index.html">Events</a></h2> -->
+          <!-- <h2 class="barlow-extralight text-center" id="contact"><a href="./index.html">Contact Us</a></h2> -->
         </div>
-
-        <div class="main-menu">
-            <div class="main-menu-close" id="menu-close">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20.332"
-                    height="20.332"
-                    viewBox="0 0 20.332 20.332">
-                    <g id="Group_8" data-name="Group 8" transform="translate(-1042.445 -266.495)">
-                        <path
-                            id="Path_9"
-                            data-name="Path 9"
-                            d="M1042.8,266.849l19.625,19.625"
-                            fill="none"
-                            stroke="#141414"
-                            stroke-width="1"/>
-                        <path
-                            id="Path_10"
-                            data-name="Path 10"
-                            d="M1062.423,266.849,1042.8,286.474"
-                            fill="none"
-                            stroke="#141414"
-                            stroke-width="1"/>
-                    </g>
-                </svg>
-            </div>
-
-            <!-- For small viewport hamburger -->
-            <div class="main-menu-item-holder">
-                <a href="./index.html"><h2 class="barlow-extralight text-center" id="home">Home</h2></a>
-                <h2 class="barlow-extralight text-center" id="our-work">Our Focus</h2>
-                <h2 class="barlow-extralight text-center" id="updates">Events</h2>
-                <h2 class="barlow-extralight text-center" id="contact">Contact Us</h2>
-            </div>
-            <img src="images/menu-image.svg" class="main-menu-image" alt="Open Menu"/>
+        <img
+          src="images/menu-image.svg"
+          class="main-menu-image"
+          alt="Open Menu"
+        />
+      </div>
+  
+      <div class="navbar">
+        <div class="navbar-dsc-logo">
+          <img
+            data-aos="fade-up"
+            src="images/DSC-MSIT-Dark-Logo.png"
+            class="logo-nav"
+            alt="DSC MSIT"
+          />
+          <img
+            data-aos="fade-up"
+            src="images/DSC-MSIT-Light-Logo.png"
+            class="logo-nav-light"
+            alt="DSC MSIT"
+          />
         </div>
-
-        <div class="navbar">
-            <div class="navbar-dsc-logo">
-                <img
-                    data-aos="fade-up"
-                    src="images/DSC-MSIT-Dark-Logo.png"
-                    class="logo-nav"
-                    alt="DSC MSIT"/>
-                <img
-                    data-aos="fade-up"
-                    src="images/DSC-MSIT-Light-Logo.png"
-                    class="logo-nav-light"
-                    alt="DSC MSIT"/>
-            </div>
-
-            <div class="menu barlow-extralight">
-                <div class="menu-item" id="home-desk">
-                    <a href="./index.html">Home</a>
-                </div>
-                <div class="menu-item" id="our-work-desk">
-                    Our Focus
-                </div>
-                
-                <div class="menu-item" id="updates-desk">
-                    Events
-                </div>
-                <div class="menu-item" id="contact-desk">
-                    <a href="#footer">Contact Us</a>
-                </div>
-                <!-- <div class="menu-item">
-              <i class="fas fa-moon fa-lg LightLogo" id="moon" onclick="toggleDark();checkDark();"></i>
-              <i class="fas fa-sun fa-lg DarkLogo" id="sun" onclick="toggleDark();checkDark();"></i>
-            </div> -->
-            </div>
-
-            <div class="menu-phone" id="menu-open">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36.68"
-                    height="21"
-                    viewBox="0 0 36.68 21">
-                    <g id="Group_7" data-name="Group 7" transform="translate(-1000.435 -266.349)">
-                        <path
-                            id="Path_6"
-                            data-name="Path 6"
-                            d="M-223.854-311.151h27.406"
-                            transform="translate(1233.563 578)"
-                            fill="none"
-                            stroke="#141414"
-                            stroke-width="1"/>
-                        <path
-                            id="Path_7"
-                            data-name="Path 7"
-                            d="M-223.854-311.151h18.34"
-                            transform="translate(1242.629 588)"
-                            fill="none"
-                            stroke="#141414"
-                            stroke-width="1"/>
-                        <path
-                            id="Path_8"
-                            data-name="Path 8"
-                            d="M-223.854-311.151h36.68"
-                            transform="translate(1224.289 598)"
-                            fill="none"
-                            stroke="#141414"
-                            stroke-width="1"/>
-                    </g>
-                </svg>
-            </div>
+  
+        <div class="menu barlow-extralight">
+          <div class="menu-item" id="home-desk">
+            <a href="./index.html">Home</a>
+          </div>
+          <!-- <div class="menu-item" id="our-work-desk">
+            <a href="./index.html">Our Focus</a>
+          </div> -->
+          <!-- <div class="menu-item" id="team-desk">
+            <a href="./team.html">The Team</a>
+          </div> -->
+          <!-- <div class="menu-item" id="updates-desk">
+            <a href="./index.html">Events</a>
+          </div> -->
+          <!-- <div class="menu-item" id="contact-desk">
+            <a href="./index.html">Contact Us</a>
+          </div> -->
         </div>
+  
+        <div class="menu-phone" id="menu-open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36.68"
+            height="21"
+            viewBox="0 0 36.68 21"
+          >
+            <g
+              id="Group_7"
+              data-name="Group 7"
+              transform="translate(-1000.435 -266.349)"
+            >
+              <path
+                id="Path_6"
+                data-name="Path 6"
+                d="M-223.854-311.151h27.406"
+                transform="translate(1233.563 578)"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+              <path
+                id="Path_7"
+                data-name="Path 7"
+                d="M-223.854-311.151h18.34"
+                transform="translate(1242.629 588)"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+              <path
+                id="Path_8"
+                data-name="Path 8"
+                d="M-223.854-311.151h36.68"
+                transform="translate(1224.289 598)"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- Navbar end -->
 
         <div class="main" id="home-scroll">
             <!-- <div class="main-text-holder"> -->
-            <div class="main-text-holder-heading">
+            <div class="main-text-holder-heading" style="opacity:0">
                 <img
                     data-aos="fade-up"
                     src="images/DSC-Dark-Logo.png"
@@ -210,11 +216,9 @@
             <!-- About Team Start -->
             <div class="aboutTeam">
                 <h1>About The Team</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in purus
-                    placerat, vehicula sapien a, faucibus mi. Sed egestas, ante eget venenatis
-                    laoreet, enim mi rutrum nisi, sit amet viverra elit sapien a massa. Nullam non
-                    mi porttitor, ullamcorper enim ac, laoreet eros. Donec ullamcorper lacinia
-                    pharetra.
+                <p>We’ve got a strong team filled with caffeine addicted developers,
+                    gradients loving designers and machine like working managers.
+                  
                 </p>
             </div>
             <!-- About Team End -->
@@ -223,10 +227,10 @@
             <div class="coreTeam">
                 <h1>Core Team</h1>
                 <br>
-                <select onclick="selectTeam()" class="minimal" id="mySelect">
+                <!-- <select onclick="selectTeam()" class="minimal" id="mySelect">
                     <option selected>2020</option>
                     <option>2019</option>
-                </select>
+                </select> -->
                 <!-- To add years ,hard code years here in html (with proper comments) and make changes to the teams js file accordingly -->
             </div>
             <br><br><br>
@@ -276,7 +280,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Vaibhav Bisht.jpeg">
+                                            src="./images/board20/Vaibhav.png">
                                     </div>
                                     <div class="content">
                                         <h3>Vaibhav Bisht</h3>
@@ -338,13 +342,13 @@
                     </div>
 
                     <!-- Row 2 -->
-                    <div class="row" style="margin-right: 0;">
+                    <div class="row lowerRows" style="margin-right: 0;">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="container1">
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Dev.jpeg">
+                                            src="./images/board20/Dev.png">
                                     </div>
                                     <div class="content">
                                         <h3>Dev Sebastian</h3>
@@ -375,7 +379,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Shubham Chaudhari.jpg"
+                                            src="./images/board20/Shubham.png"
                                             alt="Italian Trulli">
                                     </div>
                                     <div class="content">
@@ -407,7 +411,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Akshat.jpg"
+                                            src="./images/board20/Akshat.png"
                                             alt="Italian Trulli">
                                     </div>
                                     <div class="content">
@@ -474,7 +478,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Anubhav.jpg"
+                                            src="./images/board20/Anubhav.png"
                                             alt="Italian Trulli">
                                     </div>
                                     <div class="content">
@@ -506,7 +510,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Arijit Kundu.jpg">
+                                            src="./images/board20/Arijit.png">
                                     </div>
                                     <div class="content">
                                         <h3>Arijit Kundu</h3>
@@ -540,7 +544,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Sonal_Kushwaha.jpg">
+                                            src="./images/board20/Sonal.png">
                                     </div>
                                     <div class="content">
                                         <h3>Sonal Kushwaha</h3>
@@ -571,7 +575,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Shivani.jpg"
+                                            src="./images/board20/Shivani.png"
                                             alt="Italian Trulli">
                                     </div>
                                     <div class="content">
@@ -603,7 +607,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/paras.jpeg">
+                                            src="./images/board20/Paras.png">
                                     </div>
                                     <div class="content">
                                         <h3>Paras Jain</h3>
@@ -637,7 +641,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Mayank.jpg">
+                                            src="./images/board20/Mayank.png">
                                     </div>
                                     <div class="content">
                                         <h3>Mayank Chaudhary</h3>
@@ -668,7 +672,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Rishabh.jpg"
+                                            src="./images/board20/Rishabh.png"
                                             alt="Italian Trulli">
                                     </div>
                                     <div class="content">
@@ -700,7 +704,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Tushar Sabnani.jpg">
+                                            src="./images/board20/Tushar.png">
                                     </div>
                                     <div class="content">
                                         <h3>Tushar Sabnani</h3>
@@ -734,7 +738,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Soumya.jpg">
+                                            src="./images/board20/Soumya.png">
                                     </div>
                                     <div class="content">
                                         <h3>Soumya Chaudhary</h3>
@@ -765,7 +769,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Prerna_Sehrawat.jpg">
+                                            src="./images/board20/Prerna.png">
                                     </div>
                                     <div class="content">
                                         <h3>Prerna Sehrawat</h3>
@@ -796,7 +800,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Akshay.jpg">
+                                            src="./images/board20/Akshay.png">
                                     </div>
                                     <div class="content">
                                         <h3>Akshay Rein</h3>
@@ -830,7 +834,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Kartik.jpg">
+                                            src="./images/board20/Kartik.png">
                                     </div>
                                     <div class="content">
                                         <h3>Kartik Tola</h3>
@@ -861,7 +865,7 @@
                                 <div class="cardC">
                                     <div class="img">
                                         <img
-                                            src="./images/board20/Abhishek_Parashar.jpeg""
+                                            src="./images/board20/Abhishek.png"
                                             alt="Abhishek Parashar">
                                     </div>
                                     <div class="content">
@@ -890,7 +894,17 @@
 
                         
                     </div>
-                    <button class="showButton" onclick="showFunction()">Show More</button>
+                    <!-- TODO: Added display: none, because completely removing the button component.
+                    The below Show all component was not working
+                    Kindly look into it! -->
+                    <button class="showButton" onclick="showFunction()" style="display: none;">Show More</button>
+                    <div id="board-expander">
+                        <div class="button-maker">
+                          <div class=" showButto barlow-thin button-text" onclick="showFunction()">
+                            Show All
+                          </div>
+                        </div>
+                      </div>
 
                 </div>
                 <!-- 2020 end -->

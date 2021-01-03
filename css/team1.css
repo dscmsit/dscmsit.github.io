@@ -1,3 +1,6 @@
+.main{
+  padding:0 10%;
+}
 .aboutTeam{
     margin: auto;    
     padding: 40px;
@@ -85,6 +88,7 @@ select {
     transition-duration: 200ms;
   }
   .flex-container {
+    margin-left: 85px;
     display: flex;
 }
 
@@ -100,7 +104,7 @@ select {
     width: 25px;
     border-radius: 50%;
     
-    background-image: url("../icons/linkedinIcon.png");
+    background-image: url("../images/Linkedin.svg");
     background-size: cover;
   }
   .mailIcon{
@@ -116,7 +120,7 @@ select {
     width: 25px;
     border-radius: 50%;
     
-    background-image: url("../icons/instagramIcon.png");
+    background-image: url("../images/Instagram.svg");
     background-size: cover;
   }
   .fbIcon{
@@ -124,7 +128,7 @@ select {
     width: 25px;
     border-radius: 50%;
     
-    background-image: url("../icons/fbIcon.png");
+    background-image: url("../images/Facebook.svg");
     background-size: cover;
   }
   @import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
@@ -146,6 +150,7 @@ select {
     padding: 160px 20px 20px 20px;
     position: relative;
     transition-duration: 200ms;
+    text-align: center;
   }
   
   .cardC .content p,
@@ -163,7 +168,7 @@ select {
     position: absolute;
     /* width: 200px;
     height: 200px; */
-    left: 10px;
+    left: 60px;
    
     top: -50px;
     border-radius: 20px;
@@ -223,4 +228,4 @@ select {
    margin-top: 2%;
  }
 
-  /* Footer End */
+  Footer End
