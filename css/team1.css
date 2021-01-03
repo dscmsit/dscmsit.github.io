@@ -1,3 +1,6 @@
+.main{
+  padding:0 10%;
+}
 .aboutTeam{
     margin: auto;    
     padding: 40px;
@@ -101,7 +104,7 @@ select {
     width: 25px;
     border-radius: 50%;
     
-    background-image: url("../icons/linkedinIcon.png");
+    background-image: url("../images/Linkedin.svg");
     background-size: cover;
   }
   .mailIcon{
@@ -117,7 +120,7 @@ select {
     width: 25px;
     border-radius: 50%;
     
-    background-image: url("../icons/instagramIcon.png");
+    background-image: url("../images/Instagram.svg");
     background-size: cover;
   }
   .fbIcon{
@@ -125,7 +128,7 @@ select {
     width: 25px;
     border-radius: 50%;
     
-    background-image: url("../icons/fbIcon.png");
+    background-image: url("../images/Facebook.svg");
     background-size: cover;
   }
   @import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
@@ -225,4 +228,4 @@ select {
    margin-top: 2%;
  }
 
-  /* Footer End */
+  Footer End
