@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of the webpage -->
+        <title>Developer Student Clubs MSIT</title>
+
+        <!-- Favicon linking -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="icons/favicons/favicon-32x32.png"/>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="icons/favicons/apple-touch-icon.png"/>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="icons/favicons/favicon-16x16.png"/>
+
+        <!--Links to css CDN's-->
+        <!-- Latest compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css?family=Barlow:100,200,500"
+            rel="stylesheet"/>
+
+        <!-- FontAwesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"/>
+
+        <!-- Links to css files -->
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/svg.css"/>
+        <link rel="stylesheet" href="css/team1.css"/>
+
+        <!--Meta tags for SEO and Responsiveness-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="theme-color" content="#141414"/>
+        <meta
+            name="Description"
+            content="DSC MSIT (Developer Student Club MSIT) is a Google Developers program for university students, with an aim to help students build their development skills."/>
+    </head>
+    <body>
+        <!-- Navbar start -->
+
+    <!-- Navbar DSC Theme icons -->
+    <div class="phone-toggler">
+        <i
+          class="fas fa-moon fa-lg LightLogo"
+          id="moon"
+          onclick="toggleDark();checkDark();"
+        ></i>
+        <i
+          class="fas fa-sun fa-lg DarkLogo"
+          id="sun"
+          onclick="toggleDark();checkDark();"
+        ></i>
+      </div>
+  
+      <!-- Navbar -->
+      <div class="main-menu">
+        <div class="main-menu-close" id="menu-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20.332"
+            height="20.332"
+            viewBox="0 0 20.332 20.332"
+          >
+            <g
+              id="Group_8"
+              data-name="Group 8"
+              transform="translate(-1042.445 -266.495)"
+            >
+              <path
+                id="Path_9"
+                data-name="Path 9"
+                d="M1042.8,266.849l19.625,19.625"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+              <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M1062.423,266.849,1042.8,286.474"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
+        </div>
+  
+        <!-- For small viewport hamburger -->
+        <div class="main-menu-item-holder">
+          <h2 class="barlow-extralight text-center" id="home">
+            <a href="./index.html">Home</a>
+          </h2>
+          <!-- <h2 class="barlow-extralight text-center" id="our-work"><a href="./index.html#our-work-desk">Our Focus</a></h2> -->
+          
+          <!-- <h2 class="barlow-extralight text-center" id="updates"><a href="./index.html">Events</a></h2> -->
+          <!-- <h2 class="barlow-extralight text-center" id="contact"><a href="./index.html">Contact Us</a></h2> -->
+        </div>
+        <img
+          src="images/menu-image.svg"
+          class="main-menu-image"
+          alt="Open Menu"
+        />
+      </div>
+  
+      <div class="navbar">
+        <div class="navbar-dsc-logo">
+          <img
+            data-aos="fade-up"
+            src="images/DSC-MSIT-Dark-Logo.png"
+            class="logo-nav"
+            alt="DSC MSIT"
+          />
+          <img
+            data-aos="fade-up"
+            src="images/DSC-MSIT-Light-Logo.png"
+            class="logo-nav-light"
+            alt="DSC MSIT"
+          />
+        </div>
+  
+        <div class="menu barlow-extralight">
+          <div class="menu-item" id="home-desk">
+            <a href="./index.html">Home</a>
+          </div>
+          <!-- <div class="menu-item" id="our-work-desk">
+            <a href="./index.html">Our Focus</a>
+          </div> -->
+          <!-- <div class="menu-item" id="team-desk">
+            <a href="./team.html">The Team</a>
+          </div> -->
+          <!-- <div class="menu-item" id="updates-desk">
+            <a href="./index.html">Events</a>
+          </div> -->
+          <!-- <div class="menu-item" id="contact-desk">
+            <a href="./index.html">Contact Us</a>
+          </div> -->
+        </div>
+  
+        <div class="menu-phone" id="menu-open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36.68"
+            height="21"
+            viewBox="0 0 36.68 21"
+          >
+            <g
+              id="Group_7"
+              data-name="Group 7"
+              transform="translate(-1000.435 -266.349)"
+            >
+              <path
+                id="Path_6"
+                data-name="Path 6"
+                d="M-223.854-311.151h27.406"
+                transform="translate(1233.563 578)"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+              <path
+                id="Path_7"
+                data-name="Path 7"
+                d="M-223.854-311.151h18.34"
+                transform="translate(1242.629 588)"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+              <path
+                id="Path_8"
+                data-name="Path 8"
+                d="M-223.854-311.151h36.68"
+                transform="translate(1224.289 598)"
+                fill="none"
+                stroke="#141414"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- Navbar end -->
+
+        <div class="main" id="home-scroll">
+            <!-- <div class="main-text-holder"> -->
+            <div class="main-text-holder-heading" style="opacity:0">
+                <img
+                    data-aos="fade-up"
+                    src="images/DSC-Dark-Logo.png"
+                    class="logo"
+                    alt="DSC MSIT"/>
+                <img
+                    data-aos="fade-up"
+                    src="images/DSC-Light-Logo.png"
+                    class="logo-light"
+                    alt="DSC MSIT"/>
+            </div>
+
+            <!-- Navbar End -->
+
+            <!-- About Team Start -->
+            <center>
+            <div class="aboutTeam" data-aos="fade-up">
+                <h1 class="font-heading">About The Team</h1>
+                <p class="font-subheading">We’ve got a strong team filled with caffeine addicted developers,
+                    gradients loving designers and machine like working managers.
+                  
+                </p>
+            </div>
+        </center>
+            <!-- About Team End -->
+
+            <!-- Core Team Start -->
+            <div class="coreTeam" data-aos="fade-up">
+                <h1 class="font-heading">Core Team</h1>
+                <br>
+                <!-- <select onclick="selectTeam()" class="minimal" id="mySelect">
+                    <option selected>2020</option>
+                    <option>2019</option>
+                </select> -->
+                <!-- To add years ,hard code years here in html (with proper comments) and make changes to the teams js file accordingly -->
+            </div>
+            <br><br><br>
+
+            <!-- Team Cards Start from here -->
+            <div id="mainTeam" data-aos="fade-up">
+                <!-- 2020 -->
+                <div id="t020">
+                    <center>
+                    <!-- <div class="row" style="margin-right: 0;">
+                        <div class="col-12">
+                            <div class="container1">
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Vaibhav Bisht.jpeg"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Vaibhav Bisht</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+
+                                    </div>
+                                    Social Handles
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    Social Handles end
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Row 1 -->
+                    <div class="row" data-aos="fade-up" >
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Vaibhav.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Vaibhav Bisht</h3>
+                                        <p>
+                                            Lead
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/vaibhav-bisht-00b644165/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:vaibhavbisht06@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/vaibhav.bisht/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Mukul.png"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Mukul Kumar</h3>
+                                        <p>
+                                            Advisor
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/mukulcode/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:mukul.2121@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/mukulcode">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="row lowerRows"data-aos="fade-up"  >
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Dev.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Dev Sebastian</h3>
+                                        <p>
+                                            Head Android Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/devsebastian">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:devsebastian@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/devsebastian">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <center>
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Shubham.png"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Subham Choudhary</h3>
+                                        <p>
+                                            Head Web Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/shubham-choudhary-5b276a146">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="chd.nonu26@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/26_shubhamchoudhary/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                </center>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Akshat.png"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Akshat Kumar Aggarwal</h3>
+                                        <p>
+                                            Head Editor
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/akshat-k/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:akshatkag@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/akssshat/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                                </center>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="row lowerRows" data-aos="fade-up" >
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Ayush.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Ayush Shankar</h3>
+                                        <p>
+                                            Web Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/ayush23dash/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:ayushshanker23@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/ayush_shankar">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Anubhav.png"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Anubhav Jedia</h3>
+                                        <p>
+                                            Head Graphic Designer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/anubhavjedia/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:ajedia99.aj@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/jediaaaaa/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Arijit.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Arijit Kundu</h3>
+                                        <p>
+                                            Web Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://linkedin.com/in/arijit-kundu">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:kunduarijit55@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://instagram.com/arijit.kundu">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="row lowerRows" data-aos="fade-up" >
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Sonal.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Sonal Kushwaha</h3>
+                                        <p>
+                                            Android Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Shivani.png"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Shivani Dogra</h3>
+                                        <p>
+                                            Machine Learning
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/shivanidogra">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:shivanidogra789@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/shivanii0301">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Paras.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Paras Jain</h3>
+                                        <p>
+                                            Machine Learning Lead
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/prsjn">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:paras.jain121.pj@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/theparasjain">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="row lowerRows" data-aos="fade-up" >
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Mayank.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Mayank Chaudhary</h3>
+                                        <p>
+                                            Editor
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/mayank-choudhary-0209a3175/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:chaudhary.mayank26@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/rado_mayank/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Rishabh.png"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Rishabh Raizada</h3>
+                                        <p>
+                                            Android Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/rishabh510/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:rishabh5102000@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/rishabhraizada/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Tushar.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Tushar Sabnani</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 6 -->
+                    <div class="row lowerRows" data-aos="fade-up" >
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Soumya.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Soumya Chaudhary</h3>
+                                        <p>
+                                            Graphic Designer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/soumya-chaudhary-340006184">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:soumyac19@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://instagram.com/_aymuos__?igshid=77p5yph022lj">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Prerna.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Prerna Sehrawat</h3>
+                                        <p>
+                                            Web Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="www.linkedin.com/in/prerna-sehrawat">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:prernasehrawat23@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="www.instagram.com/prerna_sehrawat">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Akshay.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Akshay Rein</h3>
+                                        <p>
+                                            Android Developer
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/akshay-rein-326165b9/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:waizaeer4@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/just_wazir/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 7 -->
+                    <div class="row lowerRows"  data-aos="fade-up"  >
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Kartik.png">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Kartik Tola</h3>
+                                        <p>
+                                            Graphic Designer 
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board20/Abhishek.png"
+                                            alt="Abhishek Parashar">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Abhishek Parashar</h3>
+                                        <p>
+                                            Mentor
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/abhishek-parashar-3a9218150/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:parasharabhishek62@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/_abhishek.parashar_/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <!-- TODO: Added display: none, because completely removing the button component.
+                    The below Show all component was not working
+                    Kindly look into it! -->
+                    <button class="showButton" onclick="showFunction()" style="display: none;">Show Less</button>
+                    
+                    <div id="board-expander">
+                        <div class="button-maker">
+                            <div class=" showButto barlow-thin button-text" onclick="showFunction()">
+                            Show More
+                          </div>
+                        </div>
+                      </div>
+                    
+                </center>
+                </div>
+                <!-- 2020 end -->
+
+                <!-- 2019 -->
+                <div id="t019">
+                    <div class="row" style="margin-right: 0;">
+                        <div class="col-12">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board19/Mukul.jpg"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Mukul Kumar</h3>
+                                        <p>
+                                            Lead
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/in/mukulcode/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:mukul.2121@gmail.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/mukulcode">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" >
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="container1">
+                                <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board19/Rahul.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Rahul</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board19/Sourabh.jpeg"
+                                            alt="Italian Trulli">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Sourabh</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="container1">
+                            <center>
+                                <div class="cardC">
+                                    <div class="img">
+                                        <img
+                                            src="./images/board19/Urvi.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <h3>Urvi</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                        </p>
+
+                                    </div>
+                                    <!-- Social Handles -->
+                                    <div class="flex-container">
+                                        <a target="_blank" href="https://www.linkedin.com/">
+                                            <div class="linkedinIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="mailto:test@test.com">
+                                            <div class="mailIcon flex-child"></div>
+                                        </a>
+                                        <a target="_blank" href="https://www.instagram.com/">
+                                            <div class="instagramIcon flex-child"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Social Handles end -->
+                                </div>
+                            </center>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 2019 end -->
+
+            </div>
+            <!-- Team Cards end here -->
+            <!-- Core Team End -->
+
+            <!-- Footer Start -->
+                <div id="footer" class="footer">
+                    <img src="./icons/icon-192x192-removebg-preview.png">
+                    <h2 class="font-heading">DSC MSIT</h1>
+                    <p class="font-subheading">Powered by Google Developers</p>
+                    <div class="footerSocialHandles">
+                        <h4 class="font-heading">Follow us on</h2>
+                        <div style="display: flex;justify-content: center;">
+                        <a target="_blank" href="https://www.linkedin.com/company/dsc-msit/"><div style="margin:5px 5px;" class="linkedinIcon"></div></a>
+                        <a target="_blank" href="https://www.instagram.com/dscmsit/?hl=en"><div style="margin:5px 5px" class="mailIcon"></div></a>
+                        <a target="_blank" href="https://www.instagram.com/dscmsit/?hl=en"><div style="margin:5px 5px" class="instagramIcon"></div></a>
+                        <a target="_blank" href="https://www.facebook.com/dscmsit"><div style="margin:5px 5px" class="fbIcon"></div></a>
+                        </div>
+                    </div>
+                </div>
+            <!-- Footer End -->
+
+            <!--Links to JS files and JS CDN's-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <!--For theme mode-->
+            <script src="js/jq.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/team1.js"></script>
+            <script>
+                AOS.init();
+            </script>
+        </body>
+    </html>

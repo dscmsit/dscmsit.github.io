@@ -332,11 +332,15 @@ var checkDark = function() {
     $(".logo-nav").show();
     $("#sun").show();
     $("#moon").hide();
+    $('h3').css('background-color','#202020');
+    $('h3').css('color','white');
     $(".dark-light-toggle")
       .children()
       .text("I want light mode");
   } else {
     $(".webinar").css("background-color", "white ");
+    $('h3').css('background-color','white');
+    $('h3').css('color','black');
     $("body").removeClass("dark");
     $(".logo-light").show();
     $(".logo").hide();

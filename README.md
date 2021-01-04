@@ -1,8 +1,6 @@
 # [Developer Student Club - MSIT](http://dsc.msit.in/)
 
-<!-- https://github.com/dscmsit/dscmsit/blob/master/images/HomePageForREADME.jpg?raw=true -->
-
-![alt text](https://i.ibb.co/7r0vdgg/Screenshot-2020-02-19-at-2-44-52-PM.png"DSC-MSIT")
+![DSC MSIT](https://user-images.githubusercontent.com/53327173/103529856-67ef2780-4eac-11eb-9bfa-5179a1494a0a.png)
 
 ## Contributions and PR
 
