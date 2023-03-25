@@ -37,17 +37,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2em;
   flex-wrap: wrap;
 }
 
 .partner-image {
-  width: 150px;
-  height: 120px;
-  object-fit: scale-down;
+  width: 170px;
+  height: auto;
 }
 
 .partner-img-link {
-  margin-right: 2.5em;
+  /* margin-right: 2.5em; */
 }
 
 .webinar {
@@ -694,6 +694,12 @@ input:focus {
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .hackathon-heading {
+    font-size: 30px;
+  }
+  .partner-heading {
+    font-size: 30px;
+  }
   .button-text {
     font-size: 20px;
   }
@@ -717,6 +723,12 @@ input:focus {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+  .hackathon-heading {
+    font-size: 30px;
+  }
+  .partner-heading {
+    font-size: 30px;
+  }
   .button-text {
     font-size: 20px;
   }
@@ -790,6 +802,12 @@ input:focus {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .hackathon-heading {
+    font-size: 30px;
+  }
+  .partner-heading {
+    font-size: 30px;
+  }
   .button-text {
     font-size: 20px;
   }
@@ -875,6 +893,12 @@ input:focus {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  .hackathon-heading {
+    font-size: 30px;
+  }
+  .partner-heading {
+    font-size: 30px;
+  }
   .button-text {
     font-size: 20px;
   }
