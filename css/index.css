@@ -45,7 +45,7 @@
   flex-wrap: wrap;
 }
 
-.partner-image {
+#partner-image {
   width: 170px;
   height: auto;
 }
