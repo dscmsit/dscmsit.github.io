@@ -176,7 +176,7 @@ $(document).ready(function() {
     $(".main-menu").fadeOut(200);
     $("html, body").animate(
       {
-        scrollTop: $("#home-scroll").offset().top
+        scrollTop: $("#home-scroll").offset().top,
       },
       600
     );
@@ -185,7 +185,7 @@ $(document).ready(function() {
   $(".navbar-dsc-logo").click(function() {
     $("html, body").animate(
       {
-        scrollTop: $("#home-scroll").offset().top
+        scrollTop: $("#home-scroll").offset().top,
       },
       600
     );
@@ -194,7 +194,7 @@ $(document).ready(function() {
   $("#home-desk").click(function() {
     $("html, body").animate(
       {
-        scrollTop: $("#home-scroll").offset().top
+        scrollTop: $("#home-scroll").offset().top,
       },
       600
     );
@@ -204,7 +204,7 @@ $(document).ready(function() {
     $(".main-menu").fadeOut(200);
     $("html, body").animate(
       {
-        scrollTop: $("#our-work-scroll").offset().top
+        scrollTop: $("#our-work-scroll").offset().top,
       },
       900
     );
@@ -214,7 +214,7 @@ $(document).ready(function() {
     $(".main-menu").fadeOut(200);
     $("html, body").animate(
       {
-        scrollTop: $("#our-work-scroll").offset().top
+        scrollTop: $("#our-work-scroll").offset().top,
       },
       900
     );
@@ -223,7 +223,7 @@ $(document).ready(function() {
   $("#our-work-desk").click(function() {
     $("html, body").animate(
       {
-        scrollTop: $("#our-work-scroll").offset().top
+        scrollTop: $("#our-work-scroll").offset().top,
       },
       900
     );
@@ -233,7 +233,7 @@ $(document).ready(function() {
     $(".main-menu").fadeOut(200);
     $("html, body").animate(
       {
-        scrollTop: $("#team-scroll").offset().top
+        scrollTop: $("#team-scroll").offset().top,
       },
       1200
     );
@@ -242,7 +242,7 @@ $(document).ready(function() {
   $("#team-desk").click(function() {
     $("html, body").animate(
       {
-        scrollTop: $("#team-scroll").offset().top
+        scrollTop: $("#team-scroll").offset().top,
       },
       1200
     );
@@ -252,7 +252,7 @@ $(document).ready(function() {
     $(".main-menu").fadeOut(200);
     $("html, body").animate(
       {
-        scrollTop: $("#updates-scroll").offset().top
+        scrollTop: $("#updates-scroll").offset().top,
       },
       1800
     );
@@ -261,7 +261,7 @@ $(document).ready(function() {
   $("#updates-desk").click(function() {
     $("html, body").animate(
       {
-        scrollTop: $("#updates-scroll").offset().top
+        scrollTop: $("#updates-scroll").offset().top,
       },
       1800
     );
@@ -271,7 +271,7 @@ $(document).ready(function() {
     $(".main-menu").fadeOut(200);
     $("html, body").animate(
       {
-        scrollTop: $("#contact-scroll").offset().top
+        scrollTop: $("#contact-scroll").offset().top,
       },
       2100
     );
@@ -280,7 +280,7 @@ $(document).ready(function() {
   $("#contact-desk").click(function() {
     $("html, body").animate(
       {
-        scrollTop: $("#contact-scroll").offset().top
+        scrollTop: $("#contact-scroll").offset().top,
       },
       2100
     );
@@ -332,15 +332,15 @@ var checkDark = function() {
     $(".logo-nav").show();
     $("#sun").show();
     $("#moon").hide();
-    $('h3').css('background-color','#202020');
-    $('h3').css('color','white');
+    $("h3").css("background-color", "#202020");
+    $("h3").css("color", "white");
     $(".dark-light-toggle")
       .children()
       .text("I want light mode");
   } else {
     $(".webinar").css("background-color", "white ");
-    $('h3').css('background-color','white');
-    $('h3').css('color','black');
+    $("h3").css("background-color", "white");
+    $("h3").css("color", "black");
     $("body").removeClass("dark");
     $(".logo-light").show();
     $(".logo").hide();

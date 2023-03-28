@@ -477,13 +477,13 @@
                 </a>
               </div>
             </div>
+            <div
+              class="apply-button"
+              data-hackathon-slug="ultimate-solution-challenge-2023"
+              data-button-theme="light"
+              style="height: 44px; width: 312px"
+            ></div>
           </div>
-          <div
-            class="apply-button"
-            data-hackathon-slug="ultimate-solution-challenge-2023"
-            data-button-theme="light"
-            style="height: 44px; width: 312px"
-          ></div>
         </div>
         <!-- <div class="card" data-aos="fade-up">
         <iframe class="clip" src="https://www.youtube.com/embed/E1BchErzRgM" frameborder="0"
@@ -643,6 +643,12 @@
       </div>
     </div>
 
+    <script>
+      let dark = localStorage.getItem("dark");
+      if (dark == "true") {
+        document.body.classList.remove("partner-image");
+      }
+    </script>
     <!--Links to JS files and JS CDN's-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--For theme mode-->
